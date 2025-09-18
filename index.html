@@ -1,0 +1,307 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Phani Raja Bharath Balijepalli | Digital Twin & Simulation</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Portfolio of Phani Raja Bharath Balijepalli — Digital Twin & Simulation Engineer, PMP® project & quality leader.">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg:#0d0f12;
+      --panel:#14181e;
+      --text:#e9eef5;
+      --muted:#a3acb9;
+      --brand:#37d34a;
+      --line:#232a2f;
+      --chip:#0f1318;
+      --radius:16px;
+      --shadow:0 12px 40px rgba(0,0,0,.35);
+      --pad-x:24px;            /* global horizontal padding */
+      --nav-h:64px;            /* even header height */
+    }
+    *{box-sizing:border-box}
+    html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:16px;line-height:1.6}
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .container{max-width:1120px;margin:0 auto;padding:0 var(--pad-x)}
+
+    /* ===== NAV (even spacing) ===== */
+    .nav-wrap{
+      position:sticky; top:0; z-index:10;
+      backdrop-filter:saturate(120%) blur(8px);
+      background:rgba(12,14,18,.75);
+      border-bottom:1px solid var(--line);
+    }
+    .nav{
+      height:var(--nav-h);
+      display:flex; align-items:center; justify-content:space-between;
+      gap:16px;
+    }
+    .brand{
+      min-width:160px; /* keeps brand from jumping */
+      display:flex; align-items:center; height:var(--nav-h);
+      font-weight:700; letter-spacing:.2px;
+    }
+    .menu{
+      flex:1; display:flex; align-items:center; justify-content:center;
+      gap:28px;
+    }
+    .menu a{opacity:.85; font-weight:500}
+    .menu a:hover{opacity:1}
+    .icons{
+      min-width:160px; /* balances with brand width for symmetry */
+      display:flex; align-items:center; justify-content:flex-end; gap:14px;
+    }
+    .icon-btn{
+      display:inline-flex; align-items:center; justify-content:center;
+      width:36px; height:36px; border-radius:10px;
+      border:1px solid var(--line); background:var(--chip);
+      transition:transform .12s ease, background .12s ease;
+    }
+    .icon-btn:hover{transform:translateY(-1px); background:#171c22}
+
+    /* ===== HERO ===== */
+    .hero{display:grid;grid-template-columns:1.2fr .9fr;gap:40px;align-items:center;padding:48px 0}
+    .title {  font-size: clamp(24px, 4vw, 36px);   line-height: 1.2;  margin: 0 0 10px;  font-weight: 700;}
+    .lead {  font-size: clamp(14px, 2vw, 18px);  color: var(--muted);  max-width: 62ch;}
+
+    .cta{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:linear-gradient(180deg,#43e15a,#2fb446);
+      color:#061106;padding:14px 20px;border-radius:12px;font-weight:700;border:0;box-shadow:0 12px 40px rgba(55,211,74,.25)}
+    .cta:hover{transform:translateY(-1px)}
+    .headshot-wrap{justify-self:end;background:radial-gradient(120% 120% at 50% 40%,#2a313a 0%,#171a1f 60%,transparent 61%);border-radius:999px;padding:10px}
+    .headshot{width:320px;height:320px;border-radius:999px;object-fit:cover;border:2px solid #2f333a;box-shadow:var(--shadow)}
+    .logos{margin-top:28px;display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+    .logo{border:1px solid var(--line);background:var(--chip);padding:16px;border-radius:12px;text-align:center;color:#b9c1cc}
+
+    /* ===== SECTIONS ===== */
+    .section{padding:56px 0;border-top:1px solid var(--line)}
+    .section h2{margin:0 0 12px;font-size:28px}
+    .muted{color:var(--muted)}
+
+    /* ===== CARDS ===== */
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
+    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
+    .card h3{margin:10px 0 6px}
+    .chip{display:inline-block;padding:4px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;margin-right:6px}
+    .btn{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:10px;background:#232a30;border:1px solid var(--line)}
+    .btn:hover{background:#2a3138}
+    .btn-primary{background:var(--brand);color:#0b0f0b;border:none;font-weight:700}
+
+    /* ===== FOOTER ===== */
+    .footer{padding:40px 0;color:var(--muted);text-align:center}
+
+    /* ===== RESPONSIVE ===== */
+    @media (max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .headshot-wrap{justify-self:center}
+      .title{font-size:34px}
+      .menu{display:none} /* collapse center menu on small screens; icons remain */
+    }
+  </style>
+</head>
+<body>
+  <!-- ========= NAV ========= -->
+  <div class="nav-wrap">
+    <div class="container nav">
+      <div class="brand">Portfolio</div>
+
+      <nav class="menu" aria-label="Primary">
+        <a href="#case-studies">Case Studies</a>
+        <!--<a href="#recent-work">Recent Work</a> -->
+        <a href="#about">About</a>
+        <a href="#contact">Get In Touch</a>
+      </nav>
+
+      <div class="icons">
+        <!-- GitHub -->
+        <a class="icon-btn" href="https://github.com/your-github-username" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 .5A11.5 11.5 0 0 0 .5 12.3c0 5.2 3.4 9.6 8 11.1.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.8 1.4.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.4-5.3-6 0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.5 1.3a12.1 12.1 0 0 1 6.4 0c2.5-1.6 3.5-1.3 3.5-1.3.6 1.7.2 3 .1 3.3.8.9 1.2 2.1 1.2 3.4 0 4.6-2.7 5.7-5.3 6 .4.3.8 1 .8 2.1v3.1c0 .3.2.6.8.5a11.5 11.5 0 0 0 8-11.1A11.5 11.5 0 0 0 12 .5z"/>
+          </svg>
+        </a>
+        <!-- LinkedIn -->
+        <a class="icon-btn" href="https://www.linkedin.com/in/phanirajabharathbalijepalli" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 0 1 0-5zm.02 5.9h-3V21h3V9.4zM9 9.4H6v11.6h3v-6.1c0-1.6.3-3.1 2.26-3.1 1.94 0 1.97 1.8 1.97 3.2V21h3v-6.7c0-3.3-1.77-4.9-4.13-4.9-1.9 0-2.74 1.06-3.1 1.8h-.02V9.4z"/>
+          </svg>
+        </a>
+        <!-- Email -->
+        <a class="icon-btn" href="mailto:phani_raja4@yahoo.com" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 3.2v-.2l-8 5-8-5v.2L4 18h16l0-10.8Z"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ========= HERO ========= -->
+  <div class="container hero">
+    <div>
+      <h1 class="title">Digital Twin & Simulation Engineer<br>PMP®-Certified Project & Quality Leader</h1>
+      <p class="lead">Engineer with 10+ years across renewables, IoT, telecom, and manufacturing. Now completing an M.S. in Modeling & Simulation (UCF, GPA 4.0), building digital twins and stochastic models to drive predictive maintenance and operational excellence.</p>
+      <a class="cta" href="#case-studies">Let’s get started →</a>
+
+      <div class="logos" aria-label="Worked with / domains">
+        <div class="logo">ISRO</div>
+        <div class="logo">Mytrah Energy</div>
+        <div class="logo">ICOMM</div>
+        <div class="logo">StartupCrafters</div>
+        <div class="logo">HCLTech</div>
+      </div>
+    </div>
+    <div class="headshot-wrap">
+      <!-- 📸 Upload your photo to: assets/img/headshot.jpg -->
+      <img class="headshot" src="assests\img\headshot.JPG" alt="Portrait of Phani Raja Bharath Balijepalli">
+    </div>
+  </div>
+
+  <!-- ========= CASE STUDIES ========= -->
+  <div id="case-studies" class="container section">
+    <h2>Case Studies</h2>
+    <p class="muted">Deep dives into selected work. Each includes methods, stack, and outcomes.</p>
+    <div class="grid">
+      <article class="card">
+        <span class="chip">Monte Carlo</span><span class="chip">Traffic LWR</span><span class="chip">Python</span>
+        <h3>Bridge Fatigue Simulation</h3>
+        <p>Built a stochastic traffic-load model to estimate fatigue accumulation and optimize preventive maintenance intervals for a Florida causeway.</p>
+        <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath/BridgeMaintenanceUsingHybridDigitalTwin.git" target="_blank" rel="noopener">View repo</a>
+      
+      </article>
+
+      <article class="card">
+        <span class="chip">Digital Twin</span><span class="chip">MATLAB</span><span class="chip">Maintenance</span>
+        <h3>Helicopter Maintenance Digital Twin</h3>
+        <p>Modeled structural stress/fatigue to improve scheduling of maintenance and aircraft availability. Compared threshold vs ML-driven predictions.</p>
+        <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath/6916-Research-Methods.git" target="_blank" rel="noopener">View repo</a>
+        
+      </article>
+
+      <article class="card">
+        <span class="chip">IoT</span><span class="chip">Product Mgmt</span><span class="chip">Docs</span>
+        <h3>Battery run intermobility vehicle made from industrial waste</h3>
+        <p>Build an electric bike from scratch and demonstrated charging using solar panels</p>
+        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=lLNWNcfuvXs" target="_blank" rel="noopener">Demo</a>
+      </article>
+    </div>
+  </div>
+
+  <!-- ========= RECENT WORK ========= -->
+  <!--<div id="recent-work" class="container section">
+    <h2>Recent Work</h2>
+    <p class="muted">Code, prototypes, and explorations.</p>
+    <div class="grid">
+      <article class="card">
+        <h3>Streamlit: Traffic Snapshot & Fatigue Dashboard</h3>
+        <p>Real-time snapshot ingestion, density visualization, Monte Carlo scenarios, and Random Forest predictions for structural fatigue.</p>
+        <a class="btn btn-primary" href="https://github.com/your-github-username/bridge-streamlit-dashboard" target="_blank" rel="noopener">Repo</a>
+        <a class="btn" href="https://your-streamlit-cloud-url" target="_blank" rel="noopener">Live app</a>
+      </article>
+      <article class="card">
+        <h3>AnyLogic Experiments</h3>
+        <p>Experiments integrating personnel assignment logic with system dynamics for availability analysis (helicopter maintenance).</p>
+        <a class="btn" href="https://github.com/your-github-username/anylogic-experiments" target="_blank" rel="noopener">Repo</a>
+      </article>
+      <article class="card">
+        <h3>Quality Ops Toolkit</h3>
+        <p>ISO 9001 templates, CAPA flows, audit checklists, and supplier scorecards used across telecom/renewables projects.</p>
+        <a class="btn" href="https://github.com/your-github-username/quality-ops-toolkit" target="_blank" rel="noopener">Repo</a>
+      </article>
+    </div>
+  </div> -->
+
+  <!-- ========= ABOUT ========= -->
+  <div id="about" class="container section">
+    <h2>About</h2>
+    <p>PMP®-certified engineer with 9+ years across IoT, telecom, heavy fabrication, and renewables — spanning quality systems, supplier management, and project delivery. Currently pursuing an M.S. in Modeling & Simulation (UCF, GPA 4.0) focused on digital twins, stochastic modeling, and simulation-driven decision support.</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Skills & Tools</h3>
+        <p><strong>Simulation:</strong> AnyLogic, MATLAB/Simulink, Pyomo · <strong>Data:</strong> Python, NumPy/Pandas/SciPy, Monte Carlo · <strong>CAD/CAE:</strong> SolidWorks, AutoCAD · <strong>Quality:</strong> ISO 9001, APQP, QAP · <strong>PM:</strong> PMP®, Risk, Stakeholder Mgmt.</p>
+      </div>
+      <div class="card">
+        <h3>Education & Certs</h3>
+        <p>M.S., Modeling & Simulation — UCF (GPA 4.0)<br>B.Eng., Mechanical Engineering — JNTU<br>Certs: PMP®, ISO 9001 Lead Auditor</p>
+      </div>
+    </div>
+  </div>
+
+<!-- ========= CONTACT ========= -->
+<div id="contact" class="container section">
+  <h2>Get In Touch</h2>
+  <p class="muted">Open to Simulation/Digital Twin, Quality/Process Improvement, and Tech-forward PM roles (STEM OPT eligible; open to H-1B sponsorship).</p>
+  <div class="grid">
+    
+    <!-- Resume Card -->
+    <div class="card">
+      <!-- 📄 Upload your resume PDF to: assets/resume.pdf -->
+      <h3>Resume</h3>
+      <p>Download a concise, up-to-date copy of my resume.</p>
+      <a class="btn btn-primary" href="assests\resume.pdf" target="_blank" rel="noopener">
+        📄 Download Resume
+      </a>
+    </div>
+
+    <!-- Contact Card -->
+    <div class="card">
+      <h3>Contact</h3>
+      <p>
+        <!-- Email -->
+        <a href="mailto:phani_raja4@yahoo.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M20 4H4a2 2 0 0 0-2 2v12a2 2 0 0 0 2 
+            2h16a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2Zm0 3.2v-.2l-8 
+            5-8-5v.2L4 18h16V7.2Z"/>
+          </svg>
+          <span>Email: phani_raja4@yahoo.com</span>
+        </a><br>
+
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/phanirajabharathbalijepalli" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M4.98 3.5a2.5 2.5 0 1 1 0 5.001 2.5 2.5 0 
+            0 1 0-5zm.02 5.9h-3V21h3V9.4zM9 
+            9.4H6v11.6h3v-6.1c0-1.6.3-3.1 
+            2.26-3.1 1.94 0 1.97 1.8 
+            1.97 3.2V21h3v-6.7c0-3.3-1.77-4.9-4.13-4.9-1.9 
+            0-2.74 1.06-3.1 1.8h-.02V9.4z"/>
+          </svg>
+          <span>LinkedIn: /in/phanirajabharathbalijepalli</span>
+        </a><br>
+
+        <!-- GitHub -->
+        <a href="https://github.com/Phani-Raja-Bharath" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;">
+          <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 .5A11.5 11.5 0 0 0 .5 
+            12.3c0 5.2 3.4 9.6 8 11.1.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 
+            1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.8 1.4.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.4-5.3-6 
+            0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.3 
+            0 0 1-.3 3.5 1.3a12.1 12.1 0 0 1 
+            6.4 0c2.5-1.6 3.5-1.3 3.5-1.3.6 1.7.2 3 
+            .1 3.3.8.9 1.2 2.1 1.2 3.4 0 4.6-2.7 
+            5.7-5.3 6 .4.3.8 1 .8 2.1v3.1c0 
+            .3.2.6.8.5a11.5 11.5 0 0 0 
+            8-11.1A11.5 11.5 0 0 0 12 .5z"/>
+          </svg>
+          <span>GitHub: //github.com/Phani-Raja-Bharath</span>
+        </a>
+      </p>
+    </div>
+  </div>
+</div>
+
+
+
+  <div class="footer container">
+    © <span id="year"></span> Phani Raja Bharath Balijepalli
+  </div>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
