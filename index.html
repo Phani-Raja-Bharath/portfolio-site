@@ -68,6 +68,14 @@
       border-radius:999px; border:2px solid rgba(33,197,93,.35);
       animation:pulse 1.8s ease-out infinite;
     }
+    .status-text {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--brand);   /* green */
+    }
+
     @keyframes pulse{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.2);opacity:0}}
 
     /* LOGOS: one-line scrollable slider */
@@ -182,9 +190,9 @@
     </div>
 
     <!-- 📸 Headshot + green status dot -->
-    <div class="headshot-wrap" title="Open to opportunities • OPT/H-1B">
+    <div class="headshot-wrap">
       <img class="headshot" src="assets/img/headshot.jpg" alt="Portrait of Phani Raja Bharath Balijepalli">
-      <span class="status-badge" aria-hidden="true"></span>
+      <div class="status-text">Open to Work</div>
     </div>
   </div>
 
@@ -270,7 +278,7 @@
   </div>
 
   <div class="footer container">
-    © <span id="year"></span> Phani Raja Bharath Balijepalli · Built for GitHub Pages
+    © <span id="year"></span> Phani Raja Bharath Balijepalli.
   </div>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
