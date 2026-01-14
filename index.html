@@ -1,134 +1,159 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title>Phani Raja Bharath Balijepalli | Digital Twin & Simulation</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Phani Raja Bharath Balijepalli | Modeling & Simulation | Digital Twins | ML | PMP</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="PMP®-certified engineer focused on digital twins, stochastic modeling, and operations optimization.">
+  <meta name="description" content="PMP®-certified engineer with 9+ years experience in quality, project management, and digital twin development. Specializing in predictive maintenance and operational optimization.">
 
-  <!-- Open Graph -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧪</text></svg>">
-  <meta property="og:title" content="Phani Raja Bharath Balijepalli | Digital Twin & Simulation">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
+  <meta property="og:title" content="Phani Raja Bharath Balijepalli | Modeling & Simulation Engineer">
   <meta property="og:description" content="PMP®-certified engineer focused on digital twins, stochastic modeling, and operations optimization.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://<your-username>.github.io/">
   
-  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
   <style>
     :root{
-      --bg:#0d0f12; --panel:#14181e; --text:#e9eef5; --muted:#a3acb9;
-      --brand:#37d34a; --line:#232a2f; --chip:#0f1318;
-      --radius:16px; --shadow:0 12px 40px rgba(0,0,0,.35);
-      --pad-x:24px; --nav-h:64px;
+      --bg:#0a0c10; --panel:#13171d; --text:#e8edf4; --muted:#9ba5b3;
+      --brand:#3dd156; --accent:#2563eb; --line:#1e252c; --chip:#0e1318;
+      --radius:14px; --shadow:0 8px 32px rgba(0,0,0,.4);
+      --pad-x:24px; --nav-h:68px;
     }
-    *{box-sizing:border-box}
-    html,body{margin:0;height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial;font-size:16px;line-height:1.6}
-    a{color:inherit;text-decoration:none}
+    *{box-sizing:border-box;margin:0;padding:0}
+    html{scroll-behavior:smooth}
+    html,body{height:100%;background:var(--bg);color:var(--text);font-family:Inter,system-ui,sans-serif;font-size:16px;line-height:1.6}
+    a{color:inherit;text-decoration:none;transition:color .2s}
     img{max-width:100%;display:block}
-    .container{max-width:1120px;margin:0 auto;padding:0 var(--pad-x)}
+    .container{max-width:1140px;margin:0 auto;padding:0 var(--pad-x)}
 
     /* NAV */
-    .nav-wrap{position:sticky;top:0;z-index:10;background:rgba(12,14,18,.75);backdrop-filter:saturate(120%) blur(8px);border-bottom:1px solid var(--line)}
-    .nav{height:var(--nav-h);display:flex;align-items:center;justify-content:space-between;gap:16px}
-    .brand{min-width:160px;display:flex;align-items:center;height:var(--nav-h);font-weight:700;letter-spacing:.2px}
-    .menu{flex:1;display:flex;align-items:center;justify-content:center;gap:28px}
-    .menu a{opacity:.85;font-weight:500}
-    .menu a:hover{opacity:1}
-    .icons{min-width:160px;display:flex;align-items:center;justify-content:flex-end;gap:14px}
-    .icon-btn{display:inline-flex;align-items:center;justify-content:center;width:36px;height:36px;border-radius:10px;border:1px solid var(--line);background:var(--chip);transition:transform .12s ease, background .12s ease}
-    .icon-btn:hover{transform:translateY(-1px);background:#171c22}
+    .nav-wrap{position:sticky;top:0;z-index:100;background:rgba(10,12,16,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+    .nav{height:var(--nav-h);display:flex;align-items:center;justify-content:space-between}
+    .brand{font-weight:700;font-size:17px;letter-spacing:.3px}
+    .brand-name{color:var(--text)}
+    .brand-tag{color:var(--muted);font-weight:500;font-size:13px;margin-left:8px}
+    .menu{display:flex;gap:32px}
+    .menu a{font-weight:500;opacity:.8;font-size:15px}
+    .menu a:hover{opacity:1;color:var(--brand)}
+    .icons{display:flex;gap:12px}
+    .icon-btn{width:38px;height:38px;display:flex;align-items:center;justify-content:center;border-radius:10px;border:1px solid var(--line);background:var(--chip);transition:all .2s}
+    .icon-btn:hover{transform:translateY(-2px);background:#1a2028;border-color:#2a3138}
 
     /* HERO */
-    .hero{display:grid;grid-template-columns:1.2fr .9fr;gap:40px;align-items:center;padding:48px 0}
-    .title{font-size:clamp(18px, 4vw, 24px);line-height:1.2;margin:0 0 10px;font-weight:700}
-    .lead{font-size:clamp(14px, 2vw, 18px);color:var(--muted);max-width:62ch}
-    .cta{display:inline-flex;align-items:center;gap:10px;margin-top:22px;background:linear-gradient(180deg,#43e15a,#2fb446);color:#061106;padding:14px 20px;border-radius:12px;font-weight:700;border:0;box-shadow:0 12px 40px rgba(55,211,74,.25)}
-    .cta:hover{transform:translateY(-1px)}
+    .hero{display:grid;grid-template-columns:1.35fr .85fr;gap:56px;align-items:start;padding:32px 0 48px}
+    .hero-content h1{font-size:clamp(24px,4.5vw,40px);line-height:1.15;margin-bottom:20px;font-weight:700;background:linear-gradient(135deg,#fff 0%,#a8b5c7 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text}
+    .hero-lead{font-size:clamp(16px,2.2vw,19px);color:var(--muted);line-height:1.75;margin-bottom:32px;max-width:62ch}
+    .highlight{color:var(--brand);font-weight:600}
+    .hero-stats{display:flex;gap:48px;margin-top:40px;flex-wrap:wrap}
+    .stat-item{flex:1;min-width:140px}
+    .stat-value{font-size:48px;font-weight:700;color:var(--brand);margin-bottom:8px;line-height:1}
+    .stat-label{font-size:12px;color:var(--muted);text-transform:uppercase;letter-spacing:1.2px;font-weight:600}
 
-    /* Headshot + status badge */
-    .headshot-wrap{
-      position:relative;
-      justify-self:end;
-      background:radial-gradient(120% 120% at 50% 40%,#2a313a 0%,#171a1f 60%,transparent 61%);
-      border-radius:999px;padding:10px
-    }
-    .headshot{width:260px;height:260px;border-radius:999px;object-fit:cover;border:2px solid #2f333a;box-shadow:var(--shadow)}
-    .status-badge{
-      position:absolute; right:14px; bottom:18px;
-      width:14px; height:14px; border-radius:999px;
-      background:#21c55d;                   /* green dot */
-      box-shadow:0 0 0 3px #0d0f12;         /* ring against bg */
-    }
-    .status-badge::after{                   /* tiny pulse */
-      content:""; position:absolute; inset:-6px;
-      border-radius:999px; border:2px solid rgba(33,197,93,.35);
-      animation:pulse 1.8s ease-out infinite;
-    }
-    .status-text {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 14px;
-      font-weight: 600;
-      color: var(--brand);   /* green */
-    }
+    /* HEADSHOT */
+    .headshot-wrap{position:relative;justify-self:end;padding:0 0 40px 0;background:transparent;margin-top:0}
+    .headshot{width: 320px;aspect-ratio: 1 / 1;height: auto;border-radius: 50%;object-fit: cover;object-position: center 20%;border: 4px solid #6b7b96;box-shadow: 0 20px 60px rgba(0,0,0,.6);display: block;}
+    .status-badge{position:absolute;left:50%;bottom:2px;width:20px;height:20px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px var(--bg),0 0 0 8px rgba(34,197,94,.4);z-index:2;transform:translateX(-60px)}
+    .status-badge::after{content:"";position:absolute;inset:-10px;border-radius:50%;border:3px solid rgba(34,197,94,.5);animation:pulse 2s ease-out infinite}
+    .status-text{position:absolute;bottom:0;left:50%;transform:translateX(-28px);font-size:15px;font-weight:600;color:var(--brand);letter-spacing:.4px;white-space:nowrap}
+    @keyframes pulse{0%{transform:scale(.7);opacity:1}100%{transform:scale(1.35);opacity:0}}
+    
+    /* CTA BUTTONS */
+    .cta-buttons{display:flex;gap:16px;margin-top:36px;flex-wrap:wrap}
+    .cta-btn{display:inline-flex;align-items:center;gap:10px;padding:15px 28px;border-radius:12px;font-size:15px;font-weight:600;transition:all .25s;border:2px solid var(--line);background:var(--panel)}
+    .cta-btn:hover{transform:translateY(-2px);background:#212932;border-color:#2a3440;box-shadow:0 4px 16px rgba(0,0,0,.3)}
+    .cta-btn-primary{background:var(--brand);color:#0a0f0a;border:none}
+    .cta-btn-primary:hover{background:#34c04d;box-shadow:0 8px 24px rgba(61,209,86,.4);transform:translateY(-3px)}
 
-    @keyframes pulse{0%{transform:scale(.6);opacity:1}100%{transform:scale(1.2);opacity:0}}
-
-    /* LOGOS: one-line scrollable slider */
-    .logo-row{
-      display:flex; align-items:center; gap:16px;
-      overflow-x:auto; padding:12px 2px; margin-top:28px;
-      scrollbar-width:thin;
-    }
+    /* LOGOS */
+    .logos-section{margin-top:56px;padding-top:40px;border-top:1px solid var(--line)}
+    .logos-title{font-size:15px;font-weight:600;color:var(--muted);text-transform:uppercase;letter-spacing:1px;margin-bottom:20px}
+    .logo-row{display:flex;gap:16px;overflow-x:auto;padding:12px 2px;scrollbar-width:thin;scrollbar-color:#2a2f36 transparent}
     .logo-row::-webkit-scrollbar{height:8px}
+    .logo-row::-webkit-scrollbar-track{background:transparent}
     .logo-row::-webkit-scrollbar-thumb{background:#2a2f36;border-radius:999px}
-    .logo-tile{
-      flex:0 0 160px;                        /* equal tile width => equal spacing */
-      height:84px; display:flex; align-items:center; justify-content:center;
-      background:var(--chip); border:1px solid var(--line); border-radius:12px;
-      transition:transform .12s ease, background .12s ease;
-    }
-    .logo-tile:hover{background:#1a1f26; transform:translateY(-2px)}
-    .logo-tile img{max-height:48px; max-width:140px; object-fit:contain}
+    .logo-row::-webkit-scrollbar-thumb:hover{background:#343a42}
+    .logo-tile{flex:0 0 160px;min-width:160px;height:90px;display:flex;align-items:center;justify-content:center;background:var(--panel);border:1px solid var(--line);border-radius:12px;transition:all .2s}
+    .logo-tile:hover{background:#1a2028;transform:translateY(-3px);border-color:#2a3138}
+    .logo-tile img{max-height:52px;max-width:120px;object-fit:contain;filter:grayscale(.3) brightness(1.1)}
 
     /* SECTIONS */
-    .section{padding:56px 0;border-top:1px solid var(--line)}
-    .section h2{margin:0 0 12px;font-size:28px}
-    .muted{color:var(--muted)}
-    .subhead{display:inline-block;padding:4px 10px;font-size:12px;color:var(--muted);border:1px solid var(--line);border-radius:999px;margin-bottom:12px}
+    .section{padding:80px 0;border-top:1px solid var(--line)}
+    .section-header{margin-bottom:48px}
+    .section-title{font-size:30px;font-weight:700;margin-bottom:12px}
+    .section-intro{font-size:18px;color:var(--muted);max-width:70ch;line-height:1.7}
 
-    /* CARDS */
-    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
-    .card{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:16px;box-shadow:var(--shadow)}
-    .card h3{margin:10px 0 6px}
-    .chip{display:inline-block;padding:4px 8px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px;margin-right:6px}
-    .btn{display:inline-block;margin-top:8px;padding:10px 14px;border-radius:10px;background:#232a30;border:1px solid var(--line)}
-    .btn:hover{background:#2a3138}
-    .btn-primary{background:var(--brand);color:#0b0f0b;border:none;font-weight:700}
+    /* PROJECTS */
+    .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:28px}
+    .project-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:all .25s;position:relative;overflow:hidden}
+    .project-card::before{content:"";position:absolute;top:0;left:0;right:0;height:3px;background:linear-gradient(90deg,var(--brand),var(--accent));opacity:0;transition:opacity .3s}
+    .project-card:hover{transform:translateY(-6px);border-color:#2a3440;box-shadow:0 12px 40px rgba(0,0,0,.5)}
+    .project-card:hover::before{opacity:1}
+    
+    .project-header{margin-bottom:16px}
+    .tech-stack{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:14px}
+    .tech-badge{padding:5px 12px;border:1px solid rgba(61,209,86,.25);border-radius:20px;color:var(--brand);font-size:11px;font-weight:600;background:rgba(61,209,86,.06);text-transform:uppercase;letter-spacing:.4px}
+    .project-title{font-size:21px;font-weight:700;margin:10px 0 14px;line-height:1.3;color:var(--text)}
+    .project-desc{color:var(--muted);font-size:13px;line-height:1.7;margin-bottom:20px}
+    
+    .project-meta{display:grid;grid-template-columns:1fr 1fr;gap:16px;padding:16px 0;border-top:1px solid var(--line);margin-top:18px;font-size:13px}
+    .meta-item strong{display:block;color:var(--text);font-size:11px;text-transform:uppercase;letter-spacing:.6px;margin-bottom:5px;font-weight:600}
+    .meta-item span{color:var(--muted);line-height:1.5}
+    
+    .project-actions{display:flex;gap:12px;margin-top:18px}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:11px 18px;border-radius:10px;font-size:14px;font-weight:600;transition:all .2s;border:1px solid var(--line);background:#1a2028}
+    .btn:hover{transform:translateY(-2px);background:#212932}
+    .btn-primary{background:var(--brand);color:#0a0f0a;border:none}
+    .btn-primary:hover{background:#34c04d;box-shadow:0 4px 16px rgba(61,209,86,.3)}
+
+    .problem-identified{color:#fafafa;font-size:13px;font-weight:600;margin-top:8px;}
+
+    /* ABOUT/SKILLS */
+    .about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:24px;margin-bottom:48px}
+    .skill-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:28px;transition:all .2s}
+    .skill-card:hover{border-color:#2a3440;transform:translateY(-3px)}
+    .skill-card h3{font-size:19px;margin-bottom:14px;color:var(--text);font-weight:600}
+    .skill-card p{font-size:14px;line-height:1.8;color:var(--muted)}
+    .skill-card strong{color:var(--text);font-weight:600}
+
+    .journey-section{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:36px;margin-top:32px}
+    .journey-section h3{font-size:22px;margin-bottom:20px;color:var(--text)}
+    .journey-item{margin-bottom:24px;padding-left:24px;border-left:2px solid var(--line);position:relative}
+    .journey-item::before{content:"";position:absolute;left:-5px;top:6px;width:8px;height:8px;border-radius:50%;background:var(--brand);box-shadow:0 0 0 3px var(--panel)}
+    .journey-item h4{font-size:16px;font-weight:600;margin-bottom:6px}
+    .journey-item .company{color:var(--muted);font-size:14px;margin-bottom:8px}
+    .journey-item p{font-size:14px;color:var(--muted);line-height:1.6}
+
+    /* CONTACT */
+    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:28px}
+    .contact-card{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:32px}
+    .contact-card h3{font-size:20px;margin-bottom:16px;font-weight:600}
+    .contact-card p{color:var(--muted);line-height:2;font-size:15px}
+    .contact-highlight{background:linear-gradient(135deg,rgba(61,209,86,.1),rgba(37,99,235,.1));border:1px solid rgba(61,209,86,.3);padding:20px;border-radius:12px;margin-top:20px;text-align:center}
+    .contact-highlight strong{color:var(--brand);font-size:16px;display:block;margin-bottom:8px}
+    .contact-highlight span{color:var(--muted);font-size:14px}
 
     /* FOOTER */
-    .footer{padding:40px 0;color:var(--muted);text-align:center}
+    .footer{padding:48px 0;text-align:center;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
 
     /* RESPONSIVE */
     @media (max-width:900px){
-      .hero{grid-template-columns:1fr}
+      .hero{grid-template-columns:1fr;gap:40px}
       .headshot-wrap{justify-self:center}
-      .headshot{width:200px;height:200px}
+      .headshot{width: 600px;aspect-ratio: 1 / 1;height: auto;}
+      .status-badge{transform:translateX(-50px);bottom:2px}
+      .status-text{font-size:14px;transform:translateX(-24px)}
       .menu{display:none}
-      .logo-tile{flex-basis:140px}
-    
-    .status-text{
-      margin-top:10px;
-      text-align:center;
-      font-size:14px;
-      font-weight:600;
-      color:var(--brand);
+      .hero-stats{justify-content:center;gap:32px}
+      .stat-value{font-size:40px}
+      .cta-buttons{justify-content:center}
+      .logo-tile{flex-basis:calc(50% - 8px)}
+      .projects-grid,.about-grid,.contact-grid{grid-template-columns:1fr}
+      .project-meta{grid-template-columns:1fr}
     }
-
   </style>
 </head>
 <body>
@@ -136,35 +161,29 @@
   <div class="nav-wrap">
     <div class="container nav">
       <div class="brand">
-      <strong>Phani Raja Bharath Balijepalli</strong>
-      <span style="font-weight:500; color:var(--muted); font-size:14px; margin-left:8px;">
-        (Preferred: Bharath)
-      </span>
-    </div>
-
-      <nav class="menu" aria-label="Primary">
-        <a href="#case-studies">Case Studies</a>
+        <span class="brand-name">Phani Raja Bharath Balijepalli</span>
+        <span class="brand-tag">Modeling & Simulation | Digital Twin Enthusiast</span>
+      </div>
+      <nav class="menu">
+        <a href="#projects">Projects</a>
         <a href="#about">About</a>
-        <a href="#contact">Get In Touch</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
       </nav>
       <div class="icons">
-        <!-- GitHub -->
         <a class="icon-btn" href="https://github.com/Phani-Raja-Bharath" target="_blank" rel="noopener" aria-label="GitHub">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 .5C5.7.5.5 5.7.5 12.3c0 5.2 3.4 9.6 8 11.1.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.8 1.4.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.4-5.3-6 0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.5 1.3a12.1 12.1 0 0 1 6.4 0c2.5-1.6 3.5-1.3 3.5-1.3.6 1.7.2 3 .1 3.3.8.9 1.2 2.1 1.2 3.4 0 4.6-2.7 5.7-5.3 6 .4.3.8 1 .8 2.1v3.1c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12.3 11.5 11.5 0 0 0 12 .5z"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
           </svg>
         </a>
-        <!-- LinkedIn -->
         <a class="icon-btn" href="https://www.linkedin.com/in/phanirajabharathbalijepalli" target="_blank" rel="noopener" aria-label="LinkedIn">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/>
-            <rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
           </svg>
         </a>
-        <!-- Email -->
         <a class="icon-btn" href="mailto:bharathbalijepalli@gmail.com" aria-label="Email">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true">
-            <rect x="2" y="4" width="20" height="16" rx="2" ry="2"/><polyline points="22,6 12,13 2,6"/>
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>
           </svg>
         </a>
       </div>
@@ -173,123 +192,487 @@
 
   <!-- HERO -->
   <div class="container hero">
-    <div>
-      <h1 class="title">Digital Twin & Simulation Engineer<br>PMP®-Certified Project & Quality Leader</h1>
-      <p class="lead">Engineer with 9+ years across Product Development, Renewables, IoT, Telecom, and Manufacturing. </br>Now completing an M.S. in Modeling & Simulation (UCF, GPA 4.0), building digital twins and stochastic models to drive predictive maintenance and operational excellence.</p>
-      <h1 class="title">Companies Worked</h1>
-      <!-- Worked With (logos) — ONE-LINE SCROLLABLE ROW -->
-      <div class="logo-row" aria-label="Worked with / Domains">
-        <a class="logo-tile" href="https://www.hcltech.com/" target="_blank" rel="noopener" aria-label="HCLTech">
-          <img src="assets/logos/HCL.png" alt="HCLTech" loading="lazy">
+    <div class="hero-content">
+      <h1>Bridging Traditional Engineering with Advanced Analytics</h1>
+      <p class="hero-lead">PMP®-certified engineer with a <strong>Master’s in Modeling & Simulation (UCF) & Bachelor’s in Mechanical Engineering</strong> and a <span class="highlight">4.0 GPA</span>. I bring <span class="highlight">9+ years</span> across Telecommunications, IoT product development, Manufacturing (Oil & Gas, MIL-grade validation), Renewable Energy, and Aerospace—focused on <strong>Digital Transformation, Digital Twins, Predictive Maintenance, and Stochastic Modeling</strong> to improve reliability and operational performance.</p>
+      <div class="cta-buttons">
+        <a class="cta-btn cta-btn-primary" href="assets/Balijepalli_resume.pdf" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/>
+          </svg>
+          Download Resume
         </a>
-        <a class="logo-tile" href="https://www.linkedin.com/company/startupcrafters/" target="_blank" rel="noopener" aria-label="StartupCrafters">
-          <img src="assets/logos/startupcrafters.png" alt="StartupCrafters" loading="lazy">
+        <a class="cta-btn" href="#contact">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/>
+          </svg>
+          Get In Touch
         </a>
-        <a class="logo-tile" href="https://www.icommtele.com/" target="_blank" rel="noopener" aria-label="ICOMM">
-          <img src="assets/logos/icomm.png" alt="ICOMM" loading="lazy">
-        </a>
-        <a class="logo-tile" href="https://www.mytrah.com/" target="_blank" rel="noopener" aria-label="Mytrah Energy">
-           <img src="assets/logos/mytrah.png" alt="Mytrah Energy" loading="lazy">
-        </a>
-        <a class="logo-tile" href="https://www.isro.gov.in/" target="_blank" rel="noopener" aria-label="ISRO">
-          <img src="assets/logos/ISRO.png" alt="ISRO" loading="lazy">
-        </a>
-        </a>
+      </div>
+      
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">9+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">5</div>
+          <div class="stat-label">Industries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">4.0</div>
+          <div class="stat-label">Graduate GPA</div>
+        </div>
+      </div>
+
+      <div class="logos-section">
+        <div class="logos-title">Organizations I've Contributed To</div>
+        <div class="logo-row">
+          <a class="logo-tile" href="https://www.hcltech.com/" target="_blank" rel="noopener" title="HCL Technologies">
+            <img src="assets/logos/HCL.png" alt="HCL Technologies">
+          </a>
+          <a class="logo-tile" href="https://www.linkedin.com/company/startupcrafters/" target="_blank" rel="noopener" title="StartupCrafters">
+            <img src="assets/logos/startupcrafters.png" alt="StartupCrafters">
+          </a>
+          <a class="logo-tile" href="https://www.icommtele.com/" target="_blank" rel="noopener" title="ICOMM Tele Limited">
+            <img src="assets/logos/icomm.png" alt="ICOMM Tele">
+          </a>
+          <a class="logo-tile" href="https://www.mytrah.com/" target="_blank" rel="noopener" title="Mytrah Energy">
+            <img src="assets/logos/mytrah.png" alt="Mytrah Energy">
+          </a>
+          <a class="logo-tile" href="https://www.isro.gov.in/" target="_blank" rel="noopener" title="ISRO - Indian Space Research Organisation">
+            <img src="assets/logos/ISRO.png" alt="ISRO">
+          </a>
+          </div>
       </div>
     </div>
 
-    <!-- 📸 Headshot + green status dot -->
     <div class="headshot-wrap">
-      <img class="headshot" src="assets\img\headshot.JPG" alt="Portrait of Phani Raja Bharath Balijepalli">
+      <img class="headshot" src="assets/img/headshot.JPG" alt="Bharath Balijepalli">
+      <div class="status-badge"></div>
       <div class="status-text">Open to Work</div>
     </div>
   </div>
 
-  <!-- CASE STUDIES -->
-  <div id="case-studies" class="container section">
-    <h2>Case Studies</h2>
-    <p class="muted">Selected work that showcase my adaptability and continuous learning.</p>
-    <div class="grid">
-      <article class="card">
-        <span class="chip">Monte Carlo</span><span class="chip">Traffic LWR</span><span class="chip">Python</span><span class="chip">Random Forrest</span>
-        <h3>Bridge Fatigue Simulation</h3>
-        <p>Built a stochastic traffic-load model to estimate fatigue accumulation and optimize preventive maintenance intervals for a Florida causeway.</p>
-        <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath/BridgeMaintenanceUsingHybridDigitalTwin.git" target="_blank" rel="noopener">View repo</a>
+  <!-- PROJECTS -->
+  <div id="projects" class="container section">
+    <div class="section-header">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-intro">List of academic projects combining physics-based modeling, machine learning, and real-time data integration to solve complex engineering problems in infrastructure monitoring, sustainable computing, and operational optimization.</p>
+    </div>
+    
+    <div class="projects-grid">
+      <!-- Project 1: Bridge Digital Twin -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">Digital Twin</span>
+            <span class="tech-badge">YOLO</span>
+            <span class="tech-badge">OpenCV</span>
+            <span class="tech-badge">Random Forest</span>
+            <span class="tech-badge">Monte Carlo</span>
+            <span class="tech-badge">Streamlit</span>
+          </div>
+          <h3 class="project-title">Bridge Fatigue Monitoring Using Hybrid Digital Twin</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Masters - Individual Project</p>
+          <p style="color:var(--brand);font-size:12px;font-weight:600;margin-top:8px">📄 Abstract accepted at IABMAS 2026 Conference</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>Utilizing existing camera infrastructure for real-time structural health monitoring.</i> </p>
+          </div>
+        <p class="project-desc">Built a real-time structural health monitoring system applicable to any bridge with existing camera infrastructure. The hybrid approach combines a modified Lighthill-Whitham-Richards(LWR) traffic flow model with Random Forest prediction (R² = 0.88). The system captures live video streaming, processes the stream using YOLO computer vision for vehicle detection, utilizes Open-Meteo weather API for real-time weather integration and runs Monte Carlo simulations to quantify uncertainty in fatigue forecasting. The application is demonstrated through an interactive Streamlit dashboard that provides maintenance scheduling recommendations.</p>
+
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution Proposed</strong>
+            <span>Demonstrated a framework for shifting from reactive bridge inspections to proactive, data-driven maintenance planning</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>R² = 0.88 prediction accuracy, real-time fatigue scoring with uncertainty bounds</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>Python, OpenCV, YOLO, Scikit-learn, Selenium, Streamlit, Weather API</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Infrastructure Health, Predictive Maintenance</span>
+          </div>
+        </div>
+        
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath/BridgeMaintenanceUsingHybridDigitalTwin" target="_blank">View Repository →</a>
+        </div>
       </article>
 
-      <article class="card">
-        <span class="chip">e-Bike</span><span class="chip">Renewable Energy</span><span class="chip">Waste management</span><span class="chip">Working Prototype</span>
-        <h3>Battery run intermobility vehicle</h3>
-        <p>Developed an eco-friendly, cost-effective electric vehicle prototype using recycled materials. Integrated DC motor with gear system, reverse gear functionality, and hybrid charging (grid + solar).</p>
-        <a class="btn btn-primary" href="https://www.youtube.com/watch?v=lLNWNcfuvXs" target="_blank" rel="noopener">Video</a>
+      <!-- Project 2: Data Center UHI -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">MLR</span>
+            <span class="tech-badge">ANN</span>
+            <span class="tech-badge">Bayesian Opt</span>
+            <span class="tech-badge">Multi-Objective</span>
+            <span class="tech-badge">Monte Carlo</span>
+            <span class="tech-badge">Streamlit</span>
+          </div>
+          <h3 class="project-title">AI-Assisted Data Center Routing for Urban Heat Island Mitigation</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Masters - Individual Project</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>An energy-efficient data center promptrouting system that reduces urban heat island effects.</i> </p>
+        </div>
+        
+        <p class="project-desc">Developed an intelligent workload routing system that balances energy efficiency, latency, and localized heat impact across geographically distributed data centers. Trained MLR and ANN models on 736,000+ hourly weather samples from Open-Meteo API, using Bayesian Optimization for neural network hyperparameter tuning. Built physics-based Urban Heat Island (delta-T) model and analytical latency model combining Haversine propagation with M/M/1 queueing theory. The multi-objective routing engine demonstrates improved heat distribution with minimal performance penalty.</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution proposed</strong>
+            <span>Reduced localized urban heating from data centers while maintaining service quality</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>736k+ samples trained, physics-based UHI modeling, multi-objective optimization</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>Python, Scikit-learn, Open-Meteo API, Bayesian Optimization, Plotly</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Sustainable AI usage, Intelligent Systems</span>
+          </div>
+        </div>
+        
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath/AI-assisted-Data-Center-prompt-routing" target="_blank">View Repository →</a>
+        </div>
+      </article>
+
+      <!-- Project 3: Helicopter Fleet -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">Random Forest</span>
+            <span class="tech-badge">CTGAN</span>
+            <span class="tech-badge">Monte Carlo</span>
+            <span class="tech-badge">SDV</span>
+            <span class="tech-badge">NumPy</span>
+            <span class="tech-badge">Scikit-learn</span>
+          </div>
+          <h3 class="project-title">Helicopter Fleet Readiness and Workforce Fatigue Analysis</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Masters - Group Project</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>How maintainer fatigue impacts operational readiness and safety in Army Aviation helicopter fleets.</i> </p>
+        </div>
+        
+        <p class="project-desc">Investigated the correlation between maintainer fatigue and Army Aviation helicopter readiness using 2,865 maintenance records across 37 aircraft. Initial linear regression showed weak correlation, so we transitioned to Random Forest which captured non-linear relationships. Generated synthetic fatigue survey data for 341 personnel using CTGAN from Synthetic Data Vault. Ran 500 Monte Carlo simulations with Gaussian noise to validate findings and quantify uncertainty in workforce allocation strategies.</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution proposed</strong>
+            <span>Quantified how maintainer fatigue impacts operational readiness and safety</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>Weak correlation between fatigue and fleet availability reflecting on requirement validation of synthetic data for human related factors</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>Python, Pandas, Scikit-learn, SDV/CTGAN, NumPy, SciPy</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Military Operations, Workforce Optimization, Maintenance</span>
+          </div>
+        </div>
+        
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath/Helicopter-Fleet-Readiness-Workforce-Optimization-Model" target="_blank">View Repository →</a>
+        </div>
+      </article>
+
+      <!-- Project 4: FSM Battlefield -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">FSM</span>
+            <span class="tech-badge">QGIS</span>
+            <span class="tech-badge">@Risk</span>
+            <span class="tech-badge">DEM</span>
+          </div>
+          <h3 class="project-title">Terrain-Aware Battlefield Simulation Using Finite State Machines</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Masters - Group Project</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>How terrain constraints affect tactical decision-making in military simulations.</i> </p>
+        </div>
+        
+        <p class="project-desc">Designed a Finite State Machine Mathematical Model framework for dynamic military unit management that integrates real terrain data. Processed USGS Digital Elevation Model data in QGIS to calculate slope percentages and classify terrain into four categories (Flat, Valley, Hilly, Mountainous). Units automatically transition between Idle and Action states based on computed metrics like Force Output, Velocity, and Power. Monte Carlo sensitivity analysis in @Risk identified slope percentage as the primary risk factor affecting unit performance across terrain types.</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution proposed</strong>
+            <span>Automated tactical decision-making based on terrain constraints</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>Identified slope as primary risk driver; automated state transitions reduce manual intervention</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>QGIS, @Risk, Python, USGS DEM, Excel</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Defense Simulation, Decision Support</span>
+          </div>
+        </div>
+        
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath" target="_blank">View Project →</a>
+        </div>
+      </article>
+
+      <!-- Project 5: Solar E-Bike -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">Prototype</span>
+            <span class="tech-badge">Solar Energy</span>
+            <span class="tech-badge">SolidWorks</span>
+            <span class="tech-badge">Hardware</span>
+          </div>
+          <h3 class="project-title">Solar-Hybrid Electric Vehicle Prototype</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Bachelors - Group Project</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>Building a low-cost sustainable personal and goodstransportation solution for moving around campus.</i> </p>
+        </div>
+        
+        <p class="project-desc">Designed and fabricated a functional electric bike with hybrid charging capability (grid power and solar panels). The prototype features a DC motor with gear system, reverse functionality, and regenerative charging concept. Built using recycled materials to demonstrate sustainable engineering principles. This hands-on project integrated mechanical design (SolidWorks), electrical systems integration, and renewable energy fundamentals.</p>
+        
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution proposed</strong>
+            <span>Demonstrated feasibility of low-cost sustainable personal transportation</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>Functional prototype with dual charging, forward/reverse operation</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>SolidWorks, AutoCAD, DC Motor Systems, Solar PV</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Sustainable Engineering, Product Development</span>
+          </div>
+        </div>
+        
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://www.youtube.com/watch?v=lLNWNcfuvXs" target="_blank">Watch Demo →</a>
+        </div>
       </article>
     </div>
   </div>
 
   <!-- ABOUT -->
   <div id="about" class="container section">
-    <h2>About</h2>
-    <p>PMP®-certified engineer with 9+ years across IoT, telecom, heavy fabrication, and renewables — spanning quality systems, supplier management, and project delivery. Currently pursuing an M.S. in Modeling & Simulation (UCF, GPA 4.0) focused on digital twins, stochastic modeling, and simulation-driven decision support.</p>
-    <div class="grid">
-      <div class="card">
-        <h3>Skills & Tools</h3>
-        <p><strong>Simulation:</strong> AnyLogic, Flexsim, @Risk. </br> <strong>Data:</strong> Python, NumPy/Pandas/SciPy, Monte Carlo. </br> <strong>CAD:</strong> SolidWorks, AutoCAD. </br> <strong>Quality:</strong> ISO 9001, QAP, Functional testing. </br><strong>PM:</strong> MS Project.</p>
+    <div class="section-header">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-intro">I believe the future of engineering lies at the intersection of hands-on experience and advanced analytics. My career has taken me from launching rockets at ISRO to optimizing solar farms, managing defense product quality, reviving IoT startups, and now developing digital twins for infrastructure—each experience reinforcing the need for both traditional engineering rigor and modern computational tools.</p>
+    </div>
+    
+    <div class="about-grid">
+      <div class="skill-card">
+        <h3>🔬 Simulation & Modeling</h3>
+        <p><strong>Platforms:</strong> AnyLogic, FlexSim, @Risk, Streamlit<br>
+        <strong>Techniques:</strong> Monte Carlo Simulation, FSM, Digital Twins, Stochastic Modeling<br>
+        <strong>Focus:</strong> Predictive maintenance, operational optimization, decision support systems</p>
       </div>
-      <div class="card">
-        <h3>Education</h3>
-        <p>M.S., Modeling & Simulation — UCF (GPA 4.0)<br>B.Eng., Mechanical Engineering — JNTU<br></p>
-        <h3>Certfications</h3>
-        <p>PMP®, ISO 9001 Lead Auditor, Lean Six Sigma Green Belt, ASNT-NDT Level II</p>
+      
+      <div class="skill-card">
+        <h3>📊 Data Science & ML</h3>
+        <p><strong>Languages:</strong> Python, SQL<br>
+        <strong>Libraries:</strong> NumPy, Pandas, SciPy, Scikit-learn, OpenCV<br>
+        <strong>Methods:</strong> Random Forest, Linear Regression, CTGAN (Synthetic Data), Statistical Analysis, Computer Vision</p>
+      </div>
+      
+      <div class="skill-card">
+        <h3>🛠️ Engineering & CAD</h3>
+        <p><strong>Design:</strong> SolidWorks, AutoCAD, 3D Modeling<br>
+        <strong>GIS:</strong> QGIS, DEM Processing, Spatial Analysis<br>
+        <strong>Quality:</strong> ISO 9001, APQP, API Q1, NDT Level II (VT, PT, MPT, UT, RT)</p>
+      </div>
+      
+      <div class="skill-card">
+        <h3>📋 Project Management</h3>
+        <p><strong>Certifications:</strong> PMP®, Lean Six Sigma Green Belt, ISO 9001 Lead Auditor<br>
+        <strong>Tools:</strong> MS Project, Agile/Waterfall, Risk Analysis<br>
+        <strong>Expertise:</strong> Cross-functional leadership, quality systems, supplier management, regulatory compliance (MIL-STD, AWS, ASME)</p>
+      </div>
+    </div>
+
+    <div style="margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
+      <div>
+        <h3 style="font-size:22px;margin-bottom:18px;font-weight:600">🎓 Education</h3>
+        <div style="background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px">
+          <p style="line-height:2"><strong style="font-size:16px;color:var(--text)">M.S., Modeling & Simulation</strong><br>
+          <span style="color:var(--muted)">University of Central Florida | GPA: 4.0/4.0</span><br>
+          <span style="font-size:13px;color:var(--muted)">Dec 2025</span></p>
+          
+          <p style="line-height:2;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)"><strong style="font-size:16px;color:var(--text)">B.Eng., Mechanical Engineering</strong><br>
+          <span style="color:var(--muted)">JNTU Hyderabad | GPA: 3.4/4.0</span><br>
+          <span style="font-size:13px;color:var(--muted)">WES Verified | May 2013</span></p>
+        </div>
+      </div>
+      
+      <div>
+        <h3 style="font-size:22px;margin-bottom:18px;font-weight:600">🏆 Certifications</h3>
+        <div style="background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px">
+          <ul style="list-style:none;line-height:2.2;color:var(--muted)">
+            <li>✓ <strong style="color:var(--text)">PMP®</strong> – Project Management Institute</li>
+            <li>✓ <strong style="color:var(--text)">ISO 9001:2015 Lead Auditor</strong> – TUV Nord</li>
+            <li>✓ <strong style="color:var(--text)">Lean Six Sigma Green Belt</strong> – TUV SUD</li>
+            <li>✓ <strong style="color:var(--text)">ASNT NDT Level II</strong> (VT, PT, MPT, UT, RT)</li>
+            <li>✓ <strong style="color:var(--text)">Digital Manufacturing</strong> – Univ. of Michigan</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- EDUCATION (optional if you add college logos later)
-  <div id="education" class="container section">
-    <span class="subhead">Education & Affiliations</span>
-    <h2>Colleges & Programs</h2>
-    <p class="muted">Academic journey and communities I’m proud to be part of.</p>
-    <div class="logo-row">
-      <a class="logo-tile" href="https://www.ucf.edu/" target="_blank" rel="noopener"><img src="assets/logos/ucf.png" alt="University of Central Florida" loading="lazy"></a>
-      <a class="logo-tile" href="https://www.jntuh.ac.in/" target="_blank" rel="noopener"><img src="assets/logos/jntu.png" alt="Jawaharlal Nehru Technological University" loading="lazy"></a>
+  <!-- STANDARDS & COMPLIANCE -->
+  <div class="container section">
+    <div class="section-header">
+      <h2 class="section-title">Standards & Compliance Expertise</h2>
+      <p class="section-intro">Proven experience implementing and auditing against international quality, manufacturing, and testing standards across defense, aerospace, renewable energy, and oil & gas sectors.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="skill-card">
+        <h3>🏭 Quality Management Systems</h3>
+        <p><strong>ISO 9001:2015</strong> – Lead Auditor certified (TUV Nord)<br>
+        <strong>API Q1</strong> – Oil & Gas quality management system<br>
+        <strong>APQP/PPAP</strong> – Advanced Product Quality Planning and Production Part Approval Process<br>
+        <strong>Lean Six Sigma</strong> – Green Belt certified (TUV SUD)</p>
+      </div>
+      
+      <div class="skill-card">
+        <h3>🔬 Testing & Inspection Standards</h3>
+        <p><strong>ASNT NDT Level II</strong> – Visual Testing (VT), Penetrant Testing (PT), Magnetic Particle Testing (MPT), Ultrasonic Testing (UT), Radiographic Testing (RT)<br>
+        <strong>MIL-STD-810F</strong> – Environmental Engineering Considerations<br>
+        <strong>MIL-STD-461</strong> – EMI/EMC Requirements<br>
+        <strong>IEEE 299</strong> – Shielding Effectiveness Measurements</p>
+      </div>
+      
+      <div class="skill-card">
+        <h3>⚡ Welding & Fabrication</h3>
+        <p><strong>ASME Section IX</strong> – Welding and Brazing Qualifications<br>
+        <strong>AWS D1.1</strong> – Structural Welding Code - Steel<br>
+        <strong>Welder Qualification</strong> – Certified welders per aerospace and defense standards<br>
+        <strong>Material Testing</strong> – Aluminum alloy certification for electromagnetic shielding</p>
+      </div>
+      
+      <div class="skill-card">
+        <h3>🏗️ Structural & Civil Standards</h3>
+        <p><strong>Structural Steel Testing</strong> – Material verification and mechanical properties<br>
+        <strong>Fastener Qualification</strong> – Testing per ASTM standards<br>
+        <strong>Actuator Testing</strong> – Performance validation for solar tracker systems<br>
+        <strong>Concrete Testing</strong> – Cone slump testing for foundation work</p>
+      </div>
     </div>
   </div>
-  -->
+
+  <!-- EXPERIENCE -->
+  <div id="experience" class="container section">
+    <div class="section-header">
+      <h2 class="section-title">Professional Journey</h2>
+      <p class="section-intro">From aerospace propulsion at ISRO to digital twin development at UCF, my career spans quality management, project leadership, and engineering innovation across five industries.</p>
+    </div>
+
+    <div class="journey-section">
+      <div class="journey-item">
+        <h4>Graduate Teaching Assistant – University of Central Florida</h4>
+        <div class="company">Aug 2025 – Dec 2025 | Orlando, FL</div>
+        <p>Supporting 29 graduate students in IDS 5147 Perspectives on Modeling & Simulation. Developed project management template achieving 100% student adoption for hands-on project experience.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Manager – HCL Technologies</h4>
+        <div class="company">Jan 2024 – Jul 2024 | Bengaluru, India</div>
+        <p>Led three-function team (Reporting Analytics, Pre-Sales, Resource Deployment) for US telecom client. Orchestrated Verizon project transition from Accenture achieving 100% evaluation pass rate through strategic training coordination across two teams simultaneously.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Project Manager – StartupCrafters</h4>
+        <div class="company">Sep 2022 – Jan 2024 | Hyderabad, India</div>
+        <p>Managed cross functional teams in developing IoT product and mobile application for investor-ready MVP. Resolved critical BLE integration challenges in React Native, coordinating mechanical, electronics, and app development teams for successful US demonstration.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Senior Engineer (Quality Head) – ICOMM Tele Limited</h4>
+        <div class="company">Dec 2019 – Sep 2022 | Hyderabad, India</div>
+        <p>Quality head for EMI/EMC shielded enclosures and MIL-standard products. Achieved 100% regulatory compliance for MIL grade and oil & gas applications. Developed QAPs/QTPs/ATPs, Co-ordinated with external agencies in qualifying welders per ASME Section IX and AWS D1.1, NDT testing. Conducting internal audits and coordinated with certifying agencies for maintaining ISO 9001:2015 for the company.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Quality Associate – Mytrah Energy India</h4>
+        <div class="company">Jun 2016 – Dec 2018 | Hyderabad, India</div>
+        <p>Executed comprehensive APQP for 300MW solar tracker project. Inspected 200+ tons of structural steel, conducted fastener/actuator testing, and cone slump testing. Increased vendor delivery throughput by 80% (from 25-30 to 45 tons/day) through optimized gauging methods.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Project Associate – KV Solar Energy</h4>
+        <div class="company">Apr 2015 – May 2016 | Hyderabad, India</div>
+        <p>Designed solar module mounting structures using SolidWorks and AutoCAD. Conducted feasibility studies for solar projects, optimizing designs for manufacturability and installation efficiency.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Graduate Apprentice – ISRO Satish Dhawan Space Centre</h4>
+        <div class="company">Mar 2014 – Mar 2015 | Sriharikota, India</div>
+        <p>Completed intensive apprenticeship in Solid Propellant Plant. Supported in handling EOT cranes for solid rocket motors during inhibition and tilting operations. Designed molds in composite solid propellant production under strict aerospace quality protocols.</p>
+      </div>
+    </div>
+  </div>
 
   <!-- CONTACT -->
   <div id="contact" class="container section">
-    <h2>Get In Touch</h2>
-    <p class="muted">Open to Simulation/Digital Twin, Quality/Process Improvement, and Tech-forward PM roles (STEM OPT eligible starting from 2026; Open to visa sponsorship).</p>
-    <div class="grid">
-      <div class="card">
-        <h3>Resume</h3>
-        <p>Up-to-date copy of my resume.</p>
-        <a class="btn btn-primary" href="assets\Balijepalli_resume.pdf" target="_blank" rel="noopener">📄 Download</a>
+    <div class="section-header">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-intro">Open to opportunities in Simulation/Digital Twin Engineering, Quality/Process Improvement, and Technology-forward Project Management roles.</p>
+    </div>
+    
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📄 Resume & Portfolio</h3>
+        <p style="margin-bottom:18px">Download my comprehensive resume with detailed project descriptions, technical achievements, and full work history.</p>
+        <a class="btn btn-primary" href="assets/Balijepalli_resume.pdf" target="_blank" style="display:inline-flex">Download Resume →</a>
+        
+        <div class="contact-highlight">
+          <strong>🎯 STEM OPT Eligible Starting Jan 2026</strong>
+          <span>Open to visa sponsorship opportunities</span>
+        </div>
       </div>
-      <div class="card">
-        <h3>Contact</h3>
+      
+      <div class="contact-card">
+        <h3>📬 Contact Information</h3>
         <p>
-          <a href="mailto:bharathbalijepalli@gmail.com" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2" ry="2"/><polyline points="22,6 12,13 2,6"/></svg>
-            <span>Email: bharathbalijepalli@gmail.com</span>
-          </a><br>
-          <a href="https://www.linkedin.com/in/phanirajabharathbalijepalli" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;margin-bottom:10px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
-            <span>LinkedIn: /in/phanirajabharathbalijepalli</span>
-          </a><br>
-          <a href="https://github.com/Phani-Raja-Bharath" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px;">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 24 24"><path d="M12 .5C5.7.5.5 5.7.5 12.3c0 5.2 3.4 9.6 8 11.1.6.1.8-.2.8-.5v-2c-3.3.7-4-1.4-4-1.4-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.2 1.7 1.2 1 .1.6 1.9 2.8 1.4.1-.7.4-1.2.7-1.5-2.6-.3-5.3-1.4-5.3-6 0-1.3.5-2.5 1.2-3.4-.1-.3-.5-1.6.1-3.3 0 0 1-.3 3.5 1.3a12.1 12.1 0 0 1 6.4 0c2.5-1.6 3.5-1.3 3.5-1.3.6 1.7.2 3 .1 3.3.8.9 1.2 2.1 1.2 3.4 0 4.6-2.7 5.7-5.3 6 .4.3.8 1 .8 2.1v3.1c0 .3.2.6.8.5A11.5 11.5 0 0 0 23.5 12.3 11.5 11.5 0 0 0 12 .5z"/></svg>
-            <span>GitHub: github.com/Phani-Raja-Bharath</span>
-          </a>
+          <strong>Email:</strong> <a href="mailto:bharathbalijepalli@gmail.com">bharathbalijepalli@gmail.com</a><br>
+          <strong>Phone:</strong> +1 - (321) 704-4902<br>
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/phanirajabharathbalijepalli" target="_blank" style="color:var(--brand)">/in/phanirajabharathbalijepalli</a><br>
+          <strong>GitHub:</strong> <a href="https://github.com/Phani-Raja-Bharath" target="_blank" style="color:var(--brand)">github.com/Phani-Raja-Bharath</a><br>
+          <strong>Location:</strong> Orlando, FL (Open to relocation)
         </p>
-      </div>
+        
+        <!--<div style="margin-top:24px;padding-top:24px;border-top:1px solid var(--line)">
+          <p style="font-size:14px;color:var(--muted);font-style:italic">"I'm particularly interested in roles where I can apply simulation modeling and digital twin technology to solve real-world engineering challenges—whether in infrastructure, manufacturing, defense, or emerging tech sectors."</p>
+        </div>
+      </div>-->
     </div>
   </div>
 
   <div class="footer container">
-    © <span id="year"></span> Phani Raja Bharath Balijepalli.
+    © <span id="year"></span> Bharath Balijepalli. All rights reserved.
   </div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
+
