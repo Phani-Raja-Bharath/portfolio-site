@@ -766,11 +766,6 @@
       transform: translateY(0);
     }
 
-
-    .mobile-menu.open .mobile-menu__panel {
-      transform: translateX(0)
-    }
-
     .mobile-menu__header {
       display: flex;
       align-items: flex-start;
@@ -868,8 +863,17 @@
       }
 
       .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
         justify-content: center;
-        gap: 32px
+        gap: 8px;
+        /* reduced to prevent overflow on narrow screens */
+        width: 100%;
+      }
+
+      .stat-item {
+        width: auto;
+        min-width: 0;
       }
 
       .stat-value {
@@ -921,27 +925,47 @@
 
       .container {
         padding: 0 var(--pad-x);
+        overflow-x: hidden;
       }
 
-      /* NAV */
+      body {
+        overflow-x: hidden;
+      }
+
+      /* NAV - hide icons on mobile, show only hamburger */
+      .nav {
+        gap: 12px;
+      }
+
       .brand {
+        flex: 1;
+        min-width: 0;
         display: flex;
         flex-direction: column;
         gap: 2px;
       }
 
+      .brand-name {
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
       .brand-tag {
         margin-left: 0;
-        font-size: 12px;
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
       }
 
       .icons {
-        gap: 10px;
+        display: none;
       }
 
-      .icon-btn {
-        width: 42px;
-        height: 42px;
+      .hamburger {
+        flex-shrink: 0;
       }
 
       /* bigger touch target */
@@ -961,119 +985,145 @@
       }
 
       .cta-buttons {
+        flex-direction: column;
         gap: 12px;
         margin-top: 22px;
       }
 
       .cta-btn {
         width: 100%;
+        display: flex;
         justify-content: center;
-        padding: 14px 18px;
+        padding: 14px 8px;
+        /* reduced horizontal padding */
+        font-size: 13px;
+        /* slightly smaller font */
+        box-sizing: border-box;
       }
 
-      /* Stats: stack nicely */
+      /* Stats: wrap into rows */
+      /* Stats: wrap into rows */
       .hero-stats {
-        gap: 18px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+        /* minimal gap */
         margin-top: 24px;
+        width: 100%;
+        justify-content: center;
       }
 
       .stat-item {
-        min-width: 120px;
+        width: auto;
+        text-align: center;
+        min-width: 0;
+        padding: 0 2px;
       }
 
       .stat-value {
-        font-size: 38px;
-      }
-
-      /* HEADSHOT: never overflow */
-      .headshot-wrap {
-        justify-self: center;
-        padding: 0 0 22px 0;
-      }
-
-      .headshot {
-        width: min(260px, 72vw);
-        height: auto;
-        border-width: 3px;
-        object-position: center 18%;
-      }
-
-      .status-badge {
-        transform: translateX(-44px);
-      }
-
-      .status-text {
-        transform: translateX(-18px);
-        font-size: 13px;
-      }
-
-      /* Logos: better scrolling */
-      .logos-section {
-        margin-top: 34px;
-        padding-top: 24px;
-      }
-
-      .logo-tile {
-        flex: 0 0 140px;
-        min-width: 140px;
-        height: 78px;
-      }
-
-      .logo-tile img {
-        max-height: 44px;
-        max-width: 110px;
-      }
-
-      /* SECTIONS */
-      .section {
-        padding: 56px 0;
-      }
-
-      .section-title {
         font-size: 24px;
       }
 
-      .section-intro {
-        font-size: 16px;
+      .stat-label {
+        font-size: 9px;
+        letter-spacing: 0.2px;
       }
+    }
 
-      /* Cards: reduce padding */
-      .project-card,
-      .skill-card,
-      .contact-card {
-        padding: 20px;
-      }
+    /* HEADSHOT: never overflow */
+    .headshot-wrap {
+      justify-self: center;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 0 0 22px 0;
+    }
 
-      .projects-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
+    .headshot {
+      width: min(260px, 72vw);
+      height: auto;
+      border-width: 3px;
+      object-position: center 18%;
+    }
 
-      .project-title {
-        font-size: 18px;
-      }
+    .status-badge {
+      left: 50%;
+      transform: translateX(40px);
+    }
 
-      .project-desc {
-        font-size: 13px;
-      }
+    .status-text {
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      bottom: 0;
+    }
 
-      /* Meta grid: stack on mobile */
-      .project-meta {
-        grid-template-columns: 1fr;
-        gap: 12px;
-      }
+    /* Logos: better scrolling */
+    .logos-section {
+      margin-top: 34px;
+      padding-top: 24px;
+    }
 
-      /* About + Contact: force single column */
-      .about-grid,
-      .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 18px;
-      }
+    .logo-tile {
+      flex: 0 0 140px;
+      min-width: 140px;
+      height: 78px;
+    }
 
-      /* The education/certs row you used inline: stack it */
-      body div[style*="grid-template-columns:1fr 1fr"] {
-        grid-template-columns: 1fr !important;
-      }
+    .logo-tile img {
+      max-height: 44px;
+      max-width: 110px;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 56px 0;
+    }
+
+    .section-title {
+      font-size: 24px;
+    }
+
+    .section-intro {
+      font-size: 16px;
+    }
+
+    /* Cards: reduce padding */
+    .project-card,
+    .skill-card,
+    .contact-card {
+      padding: 20px;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .project-title {
+      font-size: 18px;
+    }
+
+    .project-desc {
+      font-size: 13px;
+    }
+
+    /* Meta grid: stack on mobile */
+    .project-meta {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    /* About + Contact: force single column */
+    .about-grid,
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    /* The education/certs row you used inline: stack it */
+    body div[style*="grid-template-columns:1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
     }
 
     /* Tablet polish (optional but helps) */
@@ -1087,6 +1137,45 @@
       .cta-btn {
         padding: 14px 22px;
       }
+    }
+
+    /* ===== 400px WIDTH FIX: prevent grid child overflow ===== */
+
+    /* In CSS Grid/Flex, children can overflow unless min-width:0 is set */
+    .hero,
+    .nav {
+      min-width: 0;
+    }
+
+    .hero-content,
+    .headshot-wrap {
+      min-width: 0;
+    }
+
+    /* Allow long lines to wrap instead of pushing layout wider */
+    .hero-content h1,
+    .hero-lead,
+    .project-title,
+    .project-desc {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    /* Ensure CTA row never causes horizontal overflow */
+    .cta-buttons {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .cta-btn {
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    /* Extra safety: if any tiny overflow still exists, don’t show sideways scroll */
+    html,
+    body {
+      overflow-x: hidden;
     }
   </style>
 </head>
@@ -1793,8 +1882,29 @@
       });
 
       // Close when a link is clicked
+      // Close when a link is clicked
       document.querySelectorAll(".mobile-link").forEach(a => {
-        a.addEventListener("click", closeMenu);
+        a.addEventListener("click", (e) => {
+          // Close menu immediately
+          closeMenu();
+
+          // Smooth scroll to target with offset
+          const href = a.getAttribute("href");
+          if (href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              const headerOffset = 70; // Height of sticky nav
+              const elementPosition = target.getBoundingClientRect().top;
+              const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+              window.scrollTo({
+                top: offsetPosition,
+                behavior: "smooth"
+              });
+            }
+          }
+        });
       });
     </script>
 </body>
