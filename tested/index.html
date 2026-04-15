@@ -1,0 +1,2150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Phani Raja Bharath Balijepalli | Modeling & Simulation | Digital Twins | ML | PMP</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="PMP®-certified engineer with 9+ years experience in quality, project management, and digital twin development. Specializing in predictive maintenance and operational optimization.">
+
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'></text></svg>">
+  <meta property="og:title" content="Phani Raja Bharath Balijepalli | Modeling & Simulation Engineer">
+  <meta property="og:description"
+    content="PMP®-certified engineer focused on digital twins, stochastic modeling, and operations optimization.">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=DM+Sans:ital,opsz,wght@0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #060810;
+      --panel: #0d1117;
+      --panel2: #111520;
+      --text: #e8edf4;
+      --muted: #8892a4;
+      --brand: #00e5a0;
+      --brand2: #00b8ff;
+      --accent: #2563eb;
+      --line: #1a2030;
+      --chip: #0a0e18;
+      --radius: 16px;
+      --shadow: 0 8px 32px rgba(0, 0, 0, .6);
+      --pad-x: 24px;
+      --nav-h: 68px;
+      --glow: 0 0 24px rgba(0, 229, 160, 0.18), 0 0 64px rgba(0, 229, 160, 0.07);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    html,
+    body {
+      height: 100%;
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', system-ui, sans-serif;
+      font-size: 16px;
+      line-height: 1.6
+    }
+
+    /* GLOBAL HEADING TYPOGRAPHY — Syne for all headings, DM Sans for body */
+    h1, h2, h3, h4, h5, h6,
+    .section-title, .stat-value, .project-title {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+    }
+
+    /* Nav brand uses body font — it's identity, not a heading */
+    .brand-name {
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 700;
+      font-size: 17px;
+      color: var(--text);
+      display: block;
+    }
+
+    .brand-tag {
+      font-family: 'DM Sans', sans-serif;
+      color: var(--muted);
+      font-weight: 500;
+      font-size: 13px;
+      margin-left: 0;
+      display: block;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+      transition: color .2s
+    }
+
+    img {
+      max-width: 100%;
+      display: block
+    }
+
+    .container {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 0 var(--pad-x)
+    }
+
+    /* NAV */
+    .nav-wrap {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(10, 12, 16, .85);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--line)
+    }
+
+    .nav {
+      height: var(--nav-h);
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+    }
+
+    .brand {
+      font-weight: 700;
+      letter-spacing: .3px;
+      text-align: left;
+      display: flex;
+      flex-direction: column;
+      gap: 1px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 32px
+    }
+
+    .menu a {
+      font-weight: 500;
+      opacity: .8;
+      font-size: 15px
+    }
+
+    .menu a:hover {
+      opacity: 1;
+      color: var(--brand)
+    }
+
+    .icons {
+      display: flex;
+      gap: 12px
+    }
+
+    .icon-btn {
+      width: 38px;
+      height: 38px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 10px;
+      border: 1px solid var(--line);
+      background: var(--chip);
+      transition: all .2s
+    }
+
+    .icon-btn:hover {
+      transform: translateY(-2px);
+      background: #1a2028;
+      border-color: #2a3138
+    }
+
+    /* HERO */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 380px;
+      gap: 64px;
+      align-items: center;
+      padding: 24px 0 40px
+    }
+
+    .hero-content h1 {
+            font-size: clamp(28px, 4.8vw, 48px);
+      line-height: 1.1;
+      margin-bottom: 20px;
+      font-weight: 800;
+      background: linear-gradient(135deg, #ffffff 0%, #a8d8ff 40%, #00e5a0 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      letter-spacing: -0.5px;
+    }
+
+    .hero-lead {
+      font-size: clamp(16px, 2.2vw, 19px);
+      color: var(--muted);
+      line-height: 1.75;
+      margin-bottom: 32px;
+      max-width: 62ch
+    }
+
+    .highlight {
+      color: var(--brand);
+      font-weight: 600
+    }
+
+    /* brand color chip overrides */
+    .tech-badge {
+      padding: 5px 12px;
+      border: 1px solid rgba(0, 229, 160, .2);
+      border-radius: 20px;
+      color: var(--brand);
+      font-size: 11px;
+      font-weight: 600;
+      background: rgba(0, 229, 160, .06);
+      text-transform: uppercase;
+      letter-spacing: .4px;
+      font-family: 'DM Mono', monospace;
+    }
+
+    .hero-stats {
+      display: flex;
+      gap: 48px;
+      margin-top: 40px;
+      flex-wrap: wrap
+    }
+
+    .stat-item {
+      flex: 1;
+      min-width: 140px
+    }
+
+    .stat-value {
+            font-size: 52px;
+      font-weight: 800;
+      background: linear-gradient(135deg, var(--brand), var(--brand2));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 8px;
+      line-height: 1
+    }
+
+    .stat-label {
+      font-size: 12px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 600
+    }
+
+    /* HEADSHOT */
+    .headshot-wrap {
+      position: relative;
+      justify-self: center;
+      padding: 0;
+      background: transparent;
+      margin-top: 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .headshot {
+      width: 340px;
+      aspect-ratio: 1 / 1;
+      height: auto;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 3px solid rgba(0,229,160,.25);
+      box-shadow: 0 0 0 1px rgba(0,229,160,.08), 0 20px 60px rgba(0,0,0,.7), 0 0 80px rgba(0,229,160,.06);
+      display: block;
+    }
+
+    .status-badge {
+      display: none; /* replaced by inline badge below */
+    }
+
+    .status-text {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--brand);
+      letter-spacing: .4px;
+      white-space: nowrap;
+      background: rgba(0,229,160,.08);
+      border: 1px solid rgba(0,229,160,.2);
+      border-radius: 20px;
+      padding: 6px 14px;
+    }
+
+    .status-text::before {
+      content: '';
+      width: 8px; height: 8px;
+      border-radius: 50%;
+      background: #22c55e;
+      box-shadow: 0 0 0 3px rgba(34,197,94,.2);
+      animation: pulse-dot 2s ease-in-out infinite;
+      flex-shrink: 0;
+    }
+    @keyframes pulse-dot {
+      0%, 100% { box-shadow: 0 0 0 3px rgba(34,197,94,.2); }
+      50% { box-shadow: 0 0 0 6px rgba(34,197,94,.0); }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(.7);
+        opacity: 1
+      }
+
+      100% {
+        transform: scale(1.35);
+        opacity: 0
+      }
+    }
+
+    /* CTA BUTTONS */
+    .cta-buttons {
+      display: flex;
+      gap: 16px;
+      margin-top: 36px;
+      flex-wrap: wrap
+    }
+
+    .cta-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 15px 28px;
+      border-radius: 12px;
+      font-size: 15px;
+      font-weight: 600;
+      transition: all .25s;
+      border: 2px solid var(--line);
+      background: var(--panel)
+    }
+
+    .cta-btn:hover {
+      transform: translateY(-2px);
+      background: #212932;
+      border-color: #2a3440;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, .3)
+    }
+
+    .cta-btn-primary {
+      background: var(--brand);
+      color: #0a0f0a;
+      border: none
+    }
+
+    .cta-btn-primary:hover {
+      background: #34c04d;
+      box-shadow: 0 8px 24px rgba(61, 209, 86, .4);
+      transform: translateY(-3px)
+    }
+
+    /* LOGOS */
+    .logos-section {
+      margin-top: 56px;
+      padding-top: 40px;
+      border-top: 1px solid var(--line)
+    }
+
+    .logos-title {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      margin-bottom: 20px
+    }
+
+    .logo-row {
+      display: flex;
+      gap: 16px;
+      overflow-x: auto;
+      padding: 12px 2px;
+      scrollbar-width: thin;
+      scrollbar-color: #2a2f36 transparent
+    }
+
+    .logo-row::-webkit-scrollbar {
+      height: 8px
+    }
+
+    .logo-row::-webkit-scrollbar-track {
+      background: transparent
+    }
+
+    .logo-row::-webkit-scrollbar-thumb {
+      background: #2a2f36;
+      border-radius: 999px
+    }
+
+    .logo-row::-webkit-scrollbar-thumb:hover {
+      background: #343a42
+    }
+
+    .logo-tile {
+      flex: 0 0 160px;
+      min-width: 160px;
+      height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      transition: all .2s
+    }
+
+    .logo-tile:hover {
+      background: #1a2028;
+      transform: translateY(-3px);
+      border-color: #2a3138
+    }
+
+    .logo-tile img {
+      max-height: 52px;
+      max-width: 120px;
+      object-fit: contain;
+      filter: grayscale(.3) brightness(1.1)
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 96px 0;
+      border-top: 1px solid var(--line)
+    }
+
+    .section-header {
+      margin-bottom: 56px
+    }
+
+    .section-title {
+            font-size: 32px;
+      font-weight: 700;
+      margin-bottom: 12px;
+      letter-spacing: -0.3px;
+    }
+
+    .section-intro {
+      font-size: 18px;
+      color: var(--muted);
+      max-width: 70ch;
+      line-height: 1.7
+    }
+
+    /* PROJECTS */
+    .projects-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      gap: 32px
+    }
+
+    .project-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden
+    }
+
+    .project-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: linear-gradient(90deg, var(--brand), var(--brand2));
+      opacity: 0;
+      transition: opacity .3s
+    }
+
+    .project-card::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      border-radius: var(--radius);
+      background: radial-gradient(600px circle at var(--mouse-x, 50%) var(--mouse-y, 50%), rgba(0,229,160,0.04), transparent 40%);
+      pointer-events: none;
+      opacity: 0;
+      transition: opacity .3s;
+    }
+
+    .project-card:hover {
+      transform: translateY(-8px);
+      border-color: rgba(0, 229, 160, 0.25);
+      box-shadow: var(--glow), 0 20px 60px rgba(0, 0, 0, .6);
+      background: var(--panel2);
+    }
+
+    .project-card:hover::before {
+      opacity: 1
+    }
+
+    .project-card:hover::after {
+      opacity: 1;
+    }
+
+    .project-header {
+      margin-bottom: 16px
+    }
+
+    .tech-stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 14px
+    }
+
+    /* tech-badge defined above */
+
+    .project-title {
+      font-size: 21px;
+      font-weight: 700;
+      margin: 10px 0 14px;
+      line-height: 1.3;
+      color: var(--text)
+    }
+
+    .project-desc {
+      color: var(--muted);
+      font-size: 13px;
+      line-height: 1.7;
+      margin-bottom: 20px
+    }
+
+    .project-meta {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      padding: 16px 0;
+      border-top: 1px solid var(--line);
+      margin-top: 18px;
+      font-size: 13px
+    }
+
+    .meta-item strong {
+      display: block;
+      color: var(--text);
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: .6px;
+      margin-bottom: 5px;
+      font-weight: 600
+    }
+
+    .meta-item span {
+      color: var(--muted);
+      line-height: 1.5
+    }
+
+    .project-actions {
+      display: flex;
+      gap: 12px;
+      margin-top: 18px
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 11px 18px;
+      border-radius: 10px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: all .2s;
+      border: 1px solid var(--line);
+      background: #1a2028
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+      background: #212932
+    }
+
+    .btn-primary {
+      background: var(--brand);
+      color: #0a0f0a;
+      border: none
+    }
+
+    .btn-primary:hover {
+      background: #34c04d;
+      box-shadow: 0 4px 16px rgba(61, 209, 86, .3)
+    }
+
+    .problem-identified {
+      color: #fafafa;
+      font-size: 13px;
+      font-weight: 600;
+      margin-top: 8px;
+    }
+
+    /* ABOUT/SKILLS */
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 24px;
+      margin-bottom: 48px
+    }
+
+    .skill-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 28px;
+      transition: all .3s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .skill-card:hover {
+      border-color: rgba(0, 229, 160, 0.2);
+      transform: translateY(-4px);
+      box-shadow: var(--glow);
+      background: var(--panel2);
+    }
+
+    .skill-card h3 {
+            font-size: 18px;
+      margin-bottom: 14px;
+      color: var(--text);
+      font-weight: 700;
+    }
+
+    .skill-card p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: var(--muted)
+    }
+
+    .skill-card strong {
+      color: var(--text);
+      font-weight: 600
+    }
+
+    .journey-section {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-top: 32px
+    }
+
+    .journey-section h3 {
+      font-size: 22px;
+      margin-bottom: 20px;
+      color: var(--text)
+    }
+
+    .journey-item {
+      margin-bottom: 24px;
+      padding-left: 24px;
+      border-left: 2px solid var(--line);
+      position: relative
+    }
+
+    .journey-item::before {
+      content: "";
+      position: absolute;
+      left: -5px;
+      top: 6px;
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: var(--brand);
+      box-shadow: 0 0 0 3px var(--panel)
+    }
+
+    .journey-item h4 {
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 6px
+    }
+
+    .journey-item .company {
+      color: var(--muted);
+      font-size: 14px;
+      margin-bottom: 8px
+    }
+
+    .journey-item p {
+      font-size: 14px;
+      color: var(--muted);
+      line-height: 1.6
+    }
+
+    /* CONTACT */
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 28px
+    }
+
+    .contact-card {
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 32px
+    }
+
+    .contact-card h3 {
+      font-size: 20px;
+      margin-bottom: 16px;
+      font-weight: 600
+    }
+
+    .contact-card p {
+      color: var(--muted);
+      line-height: 2;
+      font-size: 15px
+    }
+
+    .contact-highlight {
+      background: linear-gradient(135deg, rgba(61, 209, 86, .1), rgba(37, 99, 235, .1));
+      border: 1px solid rgba(61, 209, 86, .3);
+      padding: 20px;
+      border-radius: 12px;
+      margin-top: 20px;
+      text-align: center
+    }
+
+    .contact-highlight strong {
+      color: var(--brand);
+      font-size: 16px;
+      display: block;
+      margin-bottom: 8px
+    }
+
+    .contact-highlight span {
+      color: var(--muted);
+      font-size: 14px
+    }
+
+    /* FOOTER */
+    .footer {
+      padding: 48px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 14px;
+      border-top: 1px solid var(--line)
+    }
+
+    /* HAMBURGER BUTTON */
+    .hamburger {
+      display: none;
+      flex-direction: column;
+      justify-content: center;
+      gap: 5px;
+      width: 42px;
+      height: 42px;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 10px;
+      cursor: pointer;
+      padding: 10px
+    }
+
+    .hamburger span {
+      display: block;
+      width: 100%;
+      height: 2px;
+      background: var(--text);
+      border-radius: 2px;
+      transition: all .25s
+    }
+
+    .hamburger[aria-expanded="true"] span:nth-child(1) {
+      transform: translateY(7px) rotate(45deg)
+    }
+
+    .hamburger[aria-expanded="true"] span:nth-child(2) {
+      opacity: 0
+    }
+
+    .hamburger[aria-expanded="true"] span:nth-child(3) {
+      transform: translateY(-7px) rotate(-45deg)
+    }
+
+    /* MOBILE MENU DRAWER */
+    .mobile-menu {
+      position: fixed;
+      inset: 0;
+      z-index: 200;
+      background: rgba(0, 0, 0, .6);
+      backdrop-filter: blur(4px);
+      opacity: 0;
+      visibility: hidden;
+      transition: all .3s
+    }
+
+    .mobile-menu.open {
+      opacity: 1;
+      visibility: visible
+    }
+
+    .mobile-menu__panel {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(180deg, rgba(19, 23, 29, .98), rgba(10, 12, 16, .98));
+      border-left: none;
+      transform: translateY(-10px);
+      transition: transform .25s ease;
+      padding: 22px var(--pad-x);
+      display: flex;
+      flex-direction: column;
+    }
+
+    .mobile-menu.open .mobile-menu__panel {
+      transform: translateY(0);
+    }
+
+    .mobile-menu__header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding: 24px;
+      border-bottom: 1px solid var(--line)
+    }
+
+    .mobile-menu__title {
+      flex: 1
+    }
+
+    .mobile-close {
+      width: 36px;
+      height: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--chip);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      font-size: 18px;
+      color: var(--text);
+      cursor: pointer;
+      transition: all .2s
+    }
+
+    .mobile-close:hover {
+      background: #1a2028
+    }
+
+    .mobile-links {
+      display: flex;
+      flex-direction: column;
+      padding: 16px 0
+    }
+
+    .mobile-link {
+      padding: 16px 24px;
+      font-size: 16px;
+      font-weight: 500;
+      color: var(--text);
+      border-bottom: 1px solid var(--line);
+      transition: all .2s
+    }
+
+    .mobile-link:hover {
+      background: rgba(61, 209, 86, .08);
+      color: var(--brand)
+    }
+
+    .mobile-social {
+      margin-top: auto;
+      display: flex;
+      gap: 12px;
+      padding-top: 22px;
+      border-top: 1px solid var(--line);
+    }
+
+
+    /* RESPONSIVE */
+    @media (max-width:900px) {
+      .hero {
+        grid-template-columns: 1fr;
+        gap: 40px
+      }
+
+      .headshot-wrap {
+        justify-self: center
+      }
+
+      .headshot {
+        width: min(320px, 70vw);
+        aspect-ratio: 1 / 1;
+        height: auto;
+      }
+
+
+      .status-badge {
+        transform: translateX(-50px);
+        bottom: 2px
+      }
+
+      .status-text {
+        font-size: 14px;
+        transform: translateX(-24px)
+      }
+
+      .menu {
+        display: none
+      }
+
+      .hamburger {
+        display: flex
+      }
+
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        justify-content: center;
+        gap: 8px;
+        /* reduced to prevent overflow on narrow screens */
+        width: 100%;
+      }
+
+      .stat-item {
+        width: auto;
+        min-width: 0;
+      }
+
+      .stat-value {
+        font-size: 40px
+      }
+
+      .cta-buttons {
+        justify-content: center
+      }
+
+      .logo-tile {
+        flex-basis: calc(50% - 8px)
+      }
+
+      .projects-grid,
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr
+      }
+
+      .project-meta {
+        grid-template-columns: 1fr
+      }
+    }
+
+    /* =========================
+      MOBILE OPTIMIZATION PATCH
+      Add at END of <style>
+    ========================= */
+
+    /* Better tap targets + prevent accidental zoom quirks */
+    button,
+    a,
+    input,
+    textarea {
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      -webkit-text-size-adjust: 100%;
+    }
+
+    /* Containers: slightly tighter padding on small screens */
+    @media (max-width: 600px) {
+      :root {
+        --pad-x: 16px;
+        --nav-h: 60px;
+      }
+
+      .container {
+        padding: 0 var(--pad-x);
+        overflow-x: hidden;
+      }
+
+      body {
+        overflow-x: hidden;
+      }
+
+      /* NAV - hide icons on mobile, show only hamburger */
+      .nav {
+        gap: 12px;
+      }
+
+      .brand {
+        flex: 1;
+        min-width: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+      }
+
+      .brand-name {
+        font-size: 15px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .brand-tag {
+        margin-left: 0;
+        font-size: 11px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+
+      .icons {
+        display: none;
+      }
+
+      .hamburger {
+        flex-shrink: 0;
+      }
+
+      /* bigger touch target */
+
+      /* HERO */
+      .hero {
+        padding: 22px 0 34px;
+        gap: 26px;
+      }
+
+      .hero-content h1 {
+        margin-bottom: 14px;
+      }
+
+      .hero-lead {
+        margin-bottom: 20px;
+      }
+
+      .cta-buttons {
+        flex-direction: column;
+        gap: 12px;
+        margin-top: 22px;
+      }
+
+      .cta-btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 14px 8px;
+        /* reduced horizontal padding */
+        font-size: 13px;
+        /* slightly smaller font */
+        box-sizing: border-box;
+      }
+
+      /* Stats: wrap into rows */
+      /* Stats: wrap into rows */
+      .hero-stats {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 4px;
+        /* minimal gap */
+        margin-top: 24px;
+        width: 100%;
+        justify-content: center;
+      }
+
+      .stat-item {
+        width: auto;
+        text-align: center;
+        min-width: 0;
+        padding: 0 2px;
+      }
+
+      .stat-value {
+        font-size: 24px;
+      }
+
+      .stat-label {
+        font-size: 9px;
+        letter-spacing: 0.2px;
+      }
+    }
+
+    /* HEADSHOT: never overflow — scoped to mobile only */
+    @media (max-width: 600px) {
+    .headshot-wrap {
+      justify-self: center;
+      width: fit-content;
+      margin: 0 auto;
+      padding: 0 0 22px 0;
+    }
+
+    .headshot {
+      width: min(260px, 72vw);
+      height: auto;
+      border-width: 3px;
+      object-position: center 18%;
+    }
+
+    .status-badge {
+      left: 50%;
+      transform: translateX(40px);
+    }
+
+    .status-text {
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 12px;
+      bottom: 0;
+    }
+
+    /* Logos: better scrolling */
+    .logos-section {
+      margin-top: 34px;
+      padding-top: 24px;
+    }
+
+    .logo-tile {
+      flex: 0 0 140px;
+      min-width: 140px;
+      height: 78px;
+    }
+
+    .logo-tile img {
+      max-height: 44px;
+      max-width: 110px;
+    }
+
+    /* SECTIONS */
+    .section {
+      padding: 56px 0;
+    }
+
+    .section-title {
+      font-size: 24px;
+    }
+
+    .section-intro {
+      font-size: 16px;
+    }
+
+    /* Cards: reduce padding */
+    .project-card,
+    .skill-card,
+    .contact-card {
+      padding: 20px;
+    }
+
+    .projects-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    .project-title {
+      font-size: 18px;
+    }
+
+    .project-desc {
+      font-size: 13px;
+    }
+
+    /* Meta grid: stack on mobile */
+    .project-meta {
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    /* About + Contact: force single column */
+    .about-grid,
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 18px;
+    }
+
+    /* The education/certs row you used inline: stack it */
+    body div[style*="grid-template-columns:1fr 1fr"] {
+      grid-template-columns: 1fr !important;
+    }
+    } /* end @media (max-width: 600px) */
+
+    /* Tablet polish */
+    @media (min-width: 601px) and (max-width: 900px) {
+      .headshot {
+        width: min(320px, 60vw);
+        /* was 600px */
+        height: auto;
+      }
+
+      .cta-btn {
+        padding: 14px 22px;
+      }
+    }
+
+    /* ===== 400px WIDTH FIX: prevent grid child overflow ===== */
+
+    /* In CSS Grid/Flex, children can overflow unless min-width:0 is set */
+    .hero,
+    .nav {
+      min-width: 0;
+    }
+
+    .hero-content,
+    .headshot-wrap {
+      min-width: 0;
+    }
+
+    /* Allow long lines to wrap instead of pushing layout wider */
+    .hero-content h1,
+    .hero-lead,
+    .project-title,
+    .project-desc {
+      overflow-wrap: anywhere;
+      word-break: break-word;
+    }
+
+    /* Ensure CTA row never causes horizontal overflow */
+    .cta-buttons {
+      width: 100%;
+      min-width: 0;
+    }
+
+    .cta-btn {
+      max-width: 100%;
+      min-width: 0;
+    }
+
+    /* Extra safety: if any tiny overflow still exists, don’t show sideways scroll */
+    html,
+    body {
+      overflow-x: hidden;
+    }
+
+    /* ===== WOW FACTOR STYLES ===== */
+    .reveal { opacity: 0; transform: translateY(36px); transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1); }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-delay-1 { transition-delay: 0.1s; }
+    .reveal-delay-2 { transition-delay: 0.2s; }
+    .reveal-delay-3 { transition-delay: 0.3s; }
+    .reveal-delay-4 { transition-delay: 0.4s; }
+    .reveal-delay-5 { transition-delay: 0.5s; }
+
+    #hero-canvas { position: fixed; top: 0; left: 0; width: 100%; height: 100%; pointer-events: none; z-index: 0; }
+    .container, .mobile-menu { position: relative; z-index: 1; }
+    .nav-wrap { z-index: 100; } /* keep sticky, just ensure stacking */
+
+    body::after {
+      content: ''; position: fixed; inset: 0;
+      background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+      opacity: 0.028; pointer-events: none; z-index: 0;
+    }
+
+    .brand-name::after {
+      content: ''; display: inline-block; width: 5px; height: 5px;
+      background: var(--brand); border-radius: 50%; margin-left: 5px; vertical-align: middle;
+      box-shadow: 0 0 8px var(--brand); animation: blink 2.5s ease-in-out infinite;
+    }
+    @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
+
+    .hero-content h1 {
+      font-size: clamp(28px, 4.8vw, 50px) !important;
+      line-height: 1.08 !important; font-weight: 800 !important;
+      background: linear-gradient(135deg, #ffffff 0%, #b0d8ff 45%, #00e5a0 100%) !important;
+      -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; background-clip: text !important;
+      letter-spacing: -0.5px !important;
+    }
+    .stat-value {
+      font-size: 52px !important; font-weight: 800 !important;
+      background: linear-gradient(135deg, var(--brand) 0%, #00b8ff 100%);
+      -webkit-background-clip: text !important; -webkit-text-fill-color: transparent !important; background-clip: text !important;
+    }
+    .section-title {
+      font-weight: 800 !important; letter-spacing: -0.3px !important;
+      display: inline-block !important; padding-bottom: 16px !important; position: relative !important;
+    }
+    .section-title::after {
+      content: ''; position: absolute; bottom: 0; left: 0; width: 48px; height: 3px;
+      border-radius: 2px; background: linear-gradient(90deg, var(--brand), #00b8ff);
+    }
+    .tech-badge {
+      font-family: 'DM Mono', monospace !important; border-color: rgba(0,229,160,.2) !important;
+      color: var(--brand) !important; background: rgba(0,229,160,.06) !important;
+      font-size: 10px !important; letter-spacing: .5px !important;
+    }
+    .project-card:hover {
+      border-color: rgba(0,229,160,.25) !important;
+      box-shadow: 0 0 24px rgba(0,229,160,.12), 0 0 64px rgba(0,229,160,.05), 0 24px 60px rgba(0,0,0,.6) !important;
+      background: var(--panel2) !important;
+    }
+    .skill-card:hover {
+      border-color: rgba(0,229,160,.2) !important;
+      box-shadow: 0 0 24px rgba(0,229,160,.1), 0 12px 40px rgba(0,0,0,.5) !important;
+      background: var(--panel2) !important;
+    }
+    .skill-card h3 { font-weight: 700 !important; }
+    .contact-card:hover { border-color: rgba(0,229,160,.2); box-shadow: 0 0 24px rgba(0,229,160,.1); }
+    .headshot {
+      border-color: rgba(0,229,160,.25) !important;
+      box-shadow: 0 0 0 1px rgba(0,229,160,.08), 0 20px 60px rgba(0,0,0,.7), 0 0 80px rgba(0,229,160,.06) !important;
+    }
+    .journey-item::before { background: var(--brand) !important; box-shadow: 0 0 0 3px var(--panel), 0 0 10px var(--brand) !important; }
+    .cta-btn-primary {
+      background: linear-gradient(135deg, var(--brand), #00b8ff) !important; color: #030c0a !important;
+      border: none !important; box-shadow: 0 4px 24px rgba(0,229,160,.3) !important;
+    }
+    .cta-btn-primary:hover { background: linear-gradient(135deg, #2fffd0, #40d9ff) !important; box-shadow: 0 8px 32px rgba(0,229,160,.5) !important; }
+    .btn-primary { background: linear-gradient(135deg, var(--brand), #00b8ff) !important; color: #030c0a !important; border: none !important; font-weight: 700 !important; }
+    .btn-primary:hover { background: linear-gradient(135deg, #2fffd0, #40d9ff) !important; box-shadow: 0 4px 20px rgba(0,229,160,.4) !important; }
+    .menu a:hover { color: var(--brand) !important; text-shadow: 0 0 12px rgba(0,229,160,.4); }
+    .logo-tile:hover { border-color: rgba(0,229,160,.2) !important; box-shadow: 0 0 20px rgba(0,229,160,.1) !important; background: var(--panel2) !important; }
+    .journey-section { background: var(--panel2) !important; }
+    @media (max-width: 600px) { .stat-value { font-size: 26px !important; } }
+  </style>
+</head>
+
+<body>
+  <canvas id="hero-canvas"></canvas>
+  <!-- NAV -->
+  <div class="nav-wrap">
+    <div class="container nav">
+      <div class="brand">
+        <span class="brand-name">Phani Raja Bharath Balijepalli</span>
+        <span class="brand-tag">Modeling & Simulation | Digital Twin Enthusiast</span>
+      </div>
+      <nav class="menu">
+        <a href="#projects">Projects</a>
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="icons">
+        <a class="icon-btn" href="https://github.com/Phani-Raja-Bharath" target="_blank" rel="noopener"
+          aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="https://www.linkedin.com/in/phanirajabharathbalijepalli" target="_blank"
+          rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+        <a class="icon-btn" href="/cdn-cgi/l/email-protection#65070d041704110d0704090c0f00150409090c250208040c094b060a08" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
+
+      <!-- Mobile Menu Button (shows on <=900px) -->
+      <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-controls="mobileMenu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <div class="mobile-menu__panel">
+      <div class="mobile-menu__header">
+        <div class="mobile-menu__title">
+          <div style="font-weight:700">Phani Raja Bharath Balijepalli</div>
+          <div style="color:var(--muted);font-size:13px;margin-top:2px">Modeling & Simulation | Digital Twin Enthusiast
+          </div>
+        </div>
+        <button class="mobile-close" id="menuClose" aria-label="Close menu">✕</button>
+      </div>
+
+      <nav class="mobile-links">
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#experience" class="mobile-link">Experience</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+      </nav>
+
+      <div class="mobile-social">
+        <a class="icon-btn" href="https://github.com/Phani-Raja-Bharath" target="_blank" rel="noopener"
+          aria-label="GitHub">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+          </svg>
+        </a>
+
+        <a class="icon-btn" href="https://www.linkedin.com/in/phanirajabharathbalijepalli" target="_blank"
+          rel="noopener" aria-label="LinkedIn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" viewBox="0 0 24 24">
+            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" />
+            <rect x="2" y="9" width="4" height="12" />
+            <circle cx="4" cy="4" r="2" />
+          </svg>
+        </a>
+
+        <a class="icon-btn" href="/cdn-cgi/l/email-protection#0e6c666f7c6f7a666c6f6267646b7e6f6262674e69636f6762206d6163" aria-label="Email">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="container hero">
+    <div class="hero-content">
+      <h1>Bridging Traditional Engineering with Advanced Analytics</h1>
+      <p class="hero-lead">PMP®-certified engineer with a <strong>Master’s in Modeling &amp; Simulation (UCF)</strong> and a <span class="highlight">4.0 GPA</span> — bringing <span class="highlight">9+ years</span> of cross-industry experience to <strong>Digital Twins, Predictive Maintenance, and Stochastic Modeling</strong>.</p>
+      <div class="cta-buttons">
+        <a class="cta-btn cta-btn-primary" href="assets/Bharath_Resume.pdf" target="_blank">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" viewBox="0 0 24 24">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+          </svg>
+          Download Resume
+        </a>
+        <a class="cta-btn" href="#contact">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor"
+            stroke-width="2" viewBox="0 0 24 24">
+            <rect x="2" y="4" width="20" height="16" rx="2" />
+            <polyline points="22,6 12,13 2,6" />
+          </svg>
+          Get In Touch
+        </a>
+      </div>
+
+      <div class="hero-stats">
+        <div class="stat-item">
+          <div class="stat-value">9+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">5</div>
+          <div class="stat-label">Industries</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-value">4.0</div>
+          <div class="stat-label">Graduate GPA</div>
+        </div>
+      </div>
+
+      <div class="logos-section">
+        <div class="logos-title">Organizations I've Contributed To</div>
+        <div class="logo-row">
+          <a class="logo-tile" href="https://www.hcltech.com/" target="_blank" rel="noopener" title="HCL Technologies">
+            <img src="assets/logos/HCL.png" alt="HCL Technologies">
+          </a>
+          <a class="logo-tile" href="https://www.linkedin.com/company/startupcrafters/" target="_blank" rel="noopener"
+            title="StartupCrafters">
+            <img src="assets/logos/startupcrafters.png" alt="StartupCrafters">
+          </a>
+          <a class="logo-tile" href="https://www.icommtele.com/" target="_blank" rel="noopener"
+            title="ICOMM Tele Limited">
+            <img src="assets/logos/icomm.png" alt="ICOMM Tele">
+          </a>
+          <a class="logo-tile" href="https://www.mytrah.com/" target="_blank" rel="noopener" title="Mytrah Energy">
+            <img src="assets/logos/mytrah.png" alt="Mytrah Energy">
+          </a>
+          <a class="logo-tile" href="https://www.isro.gov.in/" target="_blank" rel="noopener"
+            title="ISRO - Indian Space Research Organisation">
+            <img src="assets/logos/ISRO.png" alt="ISRO">
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="headshot-wrap">
+      <img class="headshot" src="assets/img/headshot.JPG" alt="Bharath Balijepalli">
+      <div class="status-badge"></div>
+      <div class="status-text">Open to Work</div>
+    </div>
+  </div>
+
+  <!-- PROJECTS -->
+  <div id="projects" class="container section">
+    <div class="section-header reveal">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-intro">List of academic projects combining physics-based modeling, machine learning, and
+        real-time data integration to solve complex engineering problems in infrastructure monitoring, sustainable
+        computing, and operational optimization.</p>
+    </div>
+
+    <div class="projects-grid">
+      <!-- Project 1: Bridge Digital Twin -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">Digital Twin</span>
+            <span class="tech-badge">YOLO</span>
+            <span class="tech-badge">OpenCV</span>
+            <span class="tech-badge">Random Forest</span>
+            <span class="tech-badge">Monte Carlo</span>
+            <span class="tech-badge">Streamlit</span>
+          </div>
+          <h3 class="project-title">Bridge Fatigue Monitoring Using Hybrid Digital Twin</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Masters - Individual Project</p>
+          <p style="color:var(--brand);font-size:12px;font-weight:600;margin-top:8px">📄 Full Paper accepted at IABMAS
+            2026 Conference</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>Utilizing existing camera infrastructure
+              for real-time structural health monitoring.</i> </p>
+        </div>
+        <p class="project-desc">Built a real-time structural health monitoring system applicable to any bridge with
+          existing camera infrastructure. The hybrid approach combines a modified Lighthill-Whitham-Richards(LWR)
+          traffic flow model with Random Forest prediction (R² = 0.88). The system captures live video streaming,
+          processes the stream using YOLO computer vision for vehicle detection, utilizes Open-Meteo weather API for
+          real-time weather integration and runs Monte Carlo simulations to quantify uncertainty in fatigue forecasting.
+          The application is demonstrated through an interactive Streamlit dashboard that provides maintenance
+          scheduling recommendations.</p>
+
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution Proposed</strong>
+            <span>Demonstrated a framework for shifting from reactive bridge inspections to proactive, data-driven
+              maintenance planning</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>R² = 0.88 prediction accuracy, real-time fatigue scoring with uncertainty bounds</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>Python, OpenCV, YOLO, Scikit-learn, Selenium, Streamlit, Weather API</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Infrastructure Health, Predictive Maintenance</span>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn-primary"
+            href="https://github.com/Phani-Raja-Bharath/BridgeMaintenanceUsingHybridDigitalTwin" target="_blank">View
+            Repository →</a>
+        </div>
+      </article>
+
+      <!-- Project 2: Data Center UHI -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">MLR</span>
+            <span class="tech-badge">ANN</span>
+            <span class="tech-badge">Bayesian Opt</span>
+            <span class="tech-badge">Multi-Objective</span>
+            <span class="tech-badge">Monte Carlo</span>
+            <span class="tech-badge">Streamlit</span>
+          </div>
+          <h3 class="project-title">AI-Assisted Data Center Routing for Urban Heat Island Mitigation</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Masters - Individual Project</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>An energy-efficient data center
+              promptrouting system that reduces urban heat island effects.</i> </p>
+        </div>
+
+        <p class="project-desc">Developed an intelligent workload routing system that balances energy efficiency,
+          latency, and localized heat impact across geographically distributed data centers. Trained MLR and ANN models
+          on 736,000+ hourly weather samples from Open-Meteo API, using Bayesian Optimization for neural network
+          hyperparameter tuning. Built physics-based Urban Heat Island (delta-T) model and analytical latency model
+          combining Haversine propagation with M/M/1 queueing theory. The multi-objective routing engine demonstrates
+          improved heat distribution with minimal performance penalty.</p>
+
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution proposed</strong>
+            <span>Reduced localized urban heating from data centers while maintaining service quality</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>736k+ samples trained, physics-based UHI modeling, multi-objective optimization</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>Python, Scikit-learn, Open-Meteo API, Bayesian Optimization, Plotly</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Sustainable AI usage, Intelligent Systems</span>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath/AI-assisted-Data-Center-prompt-routing"
+            target="_blank">View Repository →</a>
+        </div>
+      </article>
+
+      <!-- Project 3: Helicopter Fleet -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">Random Forest</span>
+            <span class="tech-badge">CTGAN</span>
+            <span class="tech-badge">Monte Carlo</span>
+            <span class="tech-badge">SDV</span>
+            <span class="tech-badge">NumPy</span>
+            <span class="tech-badge">Scikit-learn</span>
+          </div>
+          <h3 class="project-title">Helicopter Fleet Readiness and Workforce Fatigue Analysis</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Masters - Group Project</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>How maintainer fatigue impacts
+              operational readiness and safety in Army Aviation helicopter fleets.</i> </p>
+        </div>
+
+        <p class="project-desc">Investigated the correlation between maintainer fatigue and Army Aviation helicopter
+          readiness using 2,865 maintenance records across 37 aircraft. Initial linear regression showed weak
+          correlation, so we transitioned to Random Forest which captured non-linear relationships. Generated synthetic
+          fatigue survey data for 341 personnel using CTGAN from Synthetic Data Vault. Ran 500 Monte Carlo simulations
+          with Gaussian noise to validate findings and quantify uncertainty in workforce allocation strategies.</p>
+
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution proposed</strong>
+            <span>Quantified how maintainer fatigue impacts operational readiness and safety</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>Weak correlation between fatigue and fleet availability reflecting on requirement validation of
+              synthetic data for human related factors</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>Python, Pandas, Scikit-learn, SDV/CTGAN, NumPy, SciPy</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Military Operations, Workforce Optimization, Maintenance</span>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn-primary"
+            href="https://github.com/Phani-Raja-Bharath/Helicopter-Fleet-Readiness-Workforce-Optimization-Model"
+            target="_blank">View Repository →</a>
+        </div>
+      </article>
+
+      <!-- Project 4: FSM Battlefield -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">FSM</span>
+            <span class="tech-badge">QGIS</span>
+            <span class="tech-badge">@Risk</span>
+            <span class="tech-badge">DEM</span>
+          </div>
+          <h3 class="project-title">Terrain-Aware Battlefield Simulation Using Finite State Machines</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Masters - Group Project</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>How terrain constraints affect tactical
+              decision-making in military simulations.</i> </p>
+        </div>
+
+        <p class="project-desc">Designed a Finite State Machine Mathematical Model framework for dynamic military unit
+          management that integrates real terrain data. Processed USGS Digital Elevation Model data in QGIS to calculate
+          slope percentages and classify terrain into four categories (Flat, Valley, Hilly, Mountainous). Units
+          automatically transition between Idle and Action states based on computed metrics like Force Output, Velocity,
+          and Power. Monte Carlo sensitivity analysis in @Risk identified slope percentage as the primary risk factor
+          affecting unit performance across terrain types.</p>
+
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution proposed</strong>
+            <span>Automated tactical decision-making based on terrain constraints</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>Identified slope as primary risk driver; automated state transitions reduce manual intervention</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>QGIS, @Risk, Python, USGS DEM, Excel</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Defense Simulation, Decision Support</span>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://github.com/Phani-Raja-Bharath" target="_blank">View Project →</a>
+        </div>
+      </article>
+
+      <!-- Project 5: Solar E-Bike -->
+      <article class="project-card">
+        <div class="project-header">
+          <div class="tech-stack">
+            <span class="tech-badge">Prototype</span>
+            <span class="tech-badge">Solar Energy</span>
+            <span class="tech-badge">SolidWorks</span>
+            <span class="tech-badge">Hardware</span>
+          </div>
+          <h3 class="project-title">Solar-Hybrid Electric Vehicle Prototype</h3>
+          <p style="color:var(--muted);font-size:12px;font-weight:500;margin-top:8px">Bachelors - Group Project</p>
+          <p class="problem-identified"><strong>Problem Identified:</strong> <i>Building a low-cost sustainable personal
+              and goodstransportation solution for moving around campus.</i> </p>
+        </div>
+
+        <p class="project-desc">Designed and fabricated a functional electric bike with hybrid charging capability (grid
+          power and solar panels). The prototype features a DC motor with gear system, reverse functionality, and
+          regenerative charging concept. Built using recycled materials to demonstrate sustainable engineering
+          principles. This hands-on project integrated mechanical design (SolidWorks), electrical systems integration,
+          and renewable energy fundamentals.</p>
+
+        <div class="project-meta">
+          <div class="meta-item">
+            <strong>Solution proposed</strong>
+            <span>Demonstrated feasibility of low-cost sustainable personal transportation</span>
+          </div>
+          <div class="meta-item">
+            <strong>Key Results</strong>
+            <span>Functional prototype with dual charging, forward/reverse operation</span>
+          </div>
+          <div class="meta-item">
+            <strong>Tech Stack</strong>
+            <span>SolidWorks, AutoCAD, DC Motor Systems, Solar PV</span>
+          </div>
+          <div class="meta-item">
+            <strong>Domain</strong>
+            <span>Sustainable Engineering, Product Development</span>
+          </div>
+        </div>
+
+        <div class="project-actions">
+          <a class="btn btn-primary" href="https://www.youtube.com/watch?v=lLNWNcfuvXs" target="_blank">Watch Demo →</a>
+        </div>
+      </article>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <div id="about" class="container section">
+    <div class="section-header reveal">
+      <h2 class="section-title">About Me</h2>
+      <p class="section-intro">I bridge hands-on engineering experience with computational modeling — combining quality systems, project leadership, and simulation techniques to build systems that are both rigorous and intelligent.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="skill-card">
+        <h3>🔬 Simulation & Modeling</h3>
+        <p><strong>Platforms:</strong> AnyLogic, FlexSim, @Risk, Streamlit<br>
+          <strong>Techniques:</strong> Monte Carlo Simulation, FSM, Digital Twins, Stochastic Modeling<br>
+          <strong>Focus:</strong> Predictive maintenance, operational optimization, decision support systems
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>📊 Data Science & ML</h3>
+        <p><strong>Languages:</strong> Python, SQL<br>
+          <strong>Libraries:</strong> NumPy, Pandas, SciPy, Scikit-learn, OpenCV<br>
+          <strong>Methods:</strong> Random Forest, Linear Regression, CTGAN (Synthetic Data), Statistical Analysis,
+          Computer Vision
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>🛠️ Engineering & CAD</h3>
+        <p><strong>Design:</strong> SolidWorks, AutoCAD, 3D Modeling<br>
+          <strong>GIS:</strong> QGIS, DEM Processing, Spatial Analysis<br>
+          <strong>Quality:</strong> ISO 9001, APQP, API Q1, NDT Level II (VT, PT, MPT, UT, RT)
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>📋 Project Management</h3>
+        <p><strong>Certifications:</strong> PMP®, Lean Six Sigma Green Belt, ISO 9001 Lead Auditor<br>
+          <strong>Tools:</strong> MS Project, Agile/Waterfall, Risk Analysis<br>
+          <strong>Expertise:</strong> Cross-functional leadership, quality systems, supplier management, regulatory
+          compliance (MIL-STD, AWS, ASME)
+        </p>
+      </div>
+    </div>
+
+    <div style="margin-top:48px;display:grid;grid-template-columns:1fr 1fr;gap:28px">
+      <div>
+        <h3 style="font-size:22px;margin-bottom:18px;font-weight:600">🎓 Education</h3>
+        <div style="background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px">
+          <p style="line-height:2"><strong style="font-size:16px;color:var(--text)">M.S., Modeling &
+              Simulation</strong><br>
+            <span style="color:var(--muted)">University of Central Florida | GPA: 4.0/4.0</span><br>
+            <span style="font-size:13px;color:var(--muted)">Dec 2025</span>
+          </p>
+
+          <p style="line-height:2;margin-top:20px;padding-top:20px;border-top:1px solid var(--line)"><strong
+              style="font-size:16px;color:var(--text)">B.Eng., Mechanical Engineering</strong><br>
+            <span style="color:var(--muted)">JNTU Hyderabad | GPA: 3.4/4.0</span><br>
+            <span style="font-size:13px;color:var(--muted)">WES Verified | May 2013</span>
+          </p>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-size:22px;margin-bottom:18px;font-weight:600">🏆 Certifications</h3>
+        <div style="background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:24px">
+          <ul style="list-style:none;line-height:2.2;color:var(--muted)">
+            <li>✓ <strong style="color:var(--text)">PMP®</strong> – Project Management Institute</li>
+            <li>✓ <strong style="color:var(--text)">ISO 9001:2015 Lead Auditor</strong> – TUV Nord</li>
+            <li>✓ <strong style="color:var(--text)">Lean Six Sigma Green Belt</strong> – TUV SUD</li>
+            <li>✓ <strong style="color:var(--text)">ASNT NDT Level II</strong> (VT, PT, MPT, UT, RT)</li>
+            <li>✓ <strong style="color:var(--text)">Digital Manufacturing</strong> – Univ. of Michigan</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- STANDARDS & COMPLIANCE -->
+  <div class="container section">
+    <div class="section-header">
+      <h2 class="section-title">Standards & Compliance Expertise</h2>
+      <p class="section-intro">Certified and field-tested across international quality, inspection, and manufacturing standards.</p>
+    </div>
+
+    <div class="about-grid">
+      <div class="skill-card">
+        <h3>🏭 Quality Management Systems</h3>
+        <p><strong>ISO 9001:2015</strong> – Lead Auditor certified (TUV Nord)<br>
+          <strong>API Q1</strong> – Oil & Gas quality management system<br>
+          <strong>APQP/PPAP</strong> – Advanced Product Quality Planning and Production Part Approval Process<br>
+          <strong>Lean Six Sigma</strong> – Green Belt certified (TUV SUD)
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>🔬 Testing & Inspection Standards</h3>
+        <p><strong>ASNT NDT Level II</strong> – Visual Testing (VT), Penetrant Testing (PT), Magnetic Particle Testing
+          (MPT), Ultrasonic Testing (UT), Radiographic Testing (RT)<br>
+          <strong>MIL-STD-810F</strong> – Environmental Engineering Considerations<br>
+          <strong>MIL-STD-461</strong> – EMI/EMC Requirements<br>
+          <strong>IEEE 299</strong> – Shielding Effectiveness Measurements
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>⚡ Welding & Fabrication</h3>
+        <p><strong>ASME Section IX</strong> – Welding and Brazing Qualifications<br>
+          <strong>AWS D1.1</strong> – Structural Welding Code - Steel<br>
+          <strong>Welder Qualification</strong> – Certified welders per aerospace and defense standards<br>
+          <strong>Material Testing</strong> – Aluminum alloy certification for electromagnetic shielding
+        </p>
+      </div>
+
+      <div class="skill-card">
+        <h3>🏗️ Structural & Civil Standards</h3>
+        <p><strong>Structural Steel Testing</strong> – Material verification and mechanical properties<br>
+          <strong>Fastener Qualification</strong> – Testing per ASTM standards<br>
+          <strong>Actuator Testing</strong> – Performance validation for solar tracker systems<br>
+          <strong>Concrete Testing</strong> – Cone slump testing for foundation work
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <!-- EXPERIENCE -->
+  <div id="experience" class="container section">
+    <div class="section-header reveal">
+      <h2 class="section-title">Professional Journey</h2>
+      <p class="section-intro">9+ years across aerospace, renewables, defense, IoT, and telecom — each role adding a new layer of technical depth and leadership.</p>
+    </div>
+
+    <div class="journey-section">
+      <div class="journey-item">
+        <h4>Volunteer Researcher – Urban Digital Twin Lab, UCF</h4>
+        <div class="company">Feb 2026 – Present | Orlando, FL</div>
+        <p>Contributing to cutting-edge urban digital twin research under faculty guidance. Developing a comprehensive Digital Twin course for a prestigious academic publication. Authoring a research paper on the pedagogy of Perspectives in Modeling & Simulation, bridging simulation education with real-world practice.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Graduate Teaching Assistant – University of Central Florida</h4>
+        <div class="company">Aug 2025 – Dec 2025 | Orlando, FL</div>
+        <p>Supported 29 graduate students in IDS 5147 Perspectives on Modeling & Simulation. Developed project
+          management template achieving 100% student adoption for hands-on project experience.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Manager – HCL Technologies</h4>
+        <div class="company">Jan 2024 – Jul 2024 | Bengaluru, India</div>
+        <p>Led three-function team (Reporting Analytics, Pre-Sales, Resource Deployment) for US telecom client.
+          Orchestrated Verizon project transition from Accenture achieving 100% evaluation pass rate through strategic
+          training coordination across two teams simultaneously.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Project Manager – StartupCrafters</h4>
+        <div class="company">Sep 2022 – Jan 2024 | Hyderabad, India</div>
+        <p>Managed cross functional teams in developing IoT product and mobile application for investor-ready MVP.
+          Resolved critical BLE integration challenges in React Native, coordinating mechanical, electronics, and app
+          development teams for successful US demonstration.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Senior Engineer (Quality Head) – ICOMM Tele Limited</h4>
+        <div class="company">Dec 2019 – Sep 2022 | Hyderabad, India</div>
+        <p>Quality head for EMI/EMC shielded enclosures and MIL-standard products. Achieved 100% regulatory compliance
+          for MIL grade and oil & gas applications. Developed QAPs/QTPs/ATPs, Co-ordinated with external agencies in
+          qualifying welders per ASME Section IX and AWS D1.1, NDT testing. Conducting internal audits and coordinated
+          with certifying agencies for maintaining ISO 9001:2015 for the company.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Quality Associate – Mytrah Energy India</h4>
+        <div class="company">Jun 2016 – Dec 2018 | Hyderabad, India</div>
+        <p>Executed comprehensive APQP for 300MW solar tracker project. Inspected 200+ tons of structural steel,
+          conducted fastener/actuator testing, and cone slump testing. Increased vendor delivery throughput by 80% (from
+          25-30 to 45 tons/day) through optimized gauging methods.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Project Associate – KV Solar Energy</h4>
+        <div class="company">Apr 2015 – May 2016 | Hyderabad, India</div>
+        <p>Designed solar module mounting structures using SolidWorks and AutoCAD. Conducted feasibility studies for
+          solar projects, optimizing designs for manufacturability and installation efficiency.</p>
+      </div>
+
+      <div class="journey-item">
+        <h4>Graduate Apprentice – ISRO Satish Dhawan Space Centre</h4>
+        <div class="company">Mar 2014 – Mar 2015 | Sriharikota, India</div>
+        <p>Completed intensive apprenticeship in Solid Propellant Plant. Supported in handling EOT cranes for solid
+          rocket motors during inhibition and tilting operations. Designed molds in composite solid propellant
+          production under strict aerospace quality protocols.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- CONTACT -->
+  <div id="contact" class="container section">
+    <div class="section-header reveal">
+      <h2 class="section-title">Let's Connect</h2>
+      <p class="section-intro">Open to opportunities in Simulation/Digital Twin Engineering, Quality/Process
+        Improvement, and Technology-forward Project Management roles.</p>
+    </div>
+
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h3>📄 Resume & Portfolio</h3>
+        <p style="margin-bottom:18px">Download my comprehensive resume with detailed project descriptions, technical
+          achievements, and full work history.</p>
+        <a class="btn btn-primary" href="assets/Bharath_Resume.pdf" target="_blank" style="display:inline-flex">Download
+          Resume →</a>
+
+        <p style="margin-top:16px;font-size:13px;color:var(--muted)">🎓 STEM OPT eligible — open to visa sponsorship.</p>
+      </div>
+
+      <div class="contact-card">
+        <h3>📬 Contact Information</h3>
+        <p>
+          <strong>Email:</strong> <a href="/cdn-cgi/l/email-protection#c2a0aaa3b0a3b6aaa0a3aeaba8a7b2a3aeaeab82a5afa3abaeeca1adaf"><span class="__cf_email__" data-cfemail="90f2f8f1e2f1e4f8f2f1fcf9faf5e0f1fcfcf9d0f7fdf1f9fcbef3fffd">[email&#160;protected]</span></a><br>
+          <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/phanirajabharathbalijepalli" target="_blank"
+            style="color:var(--brand)">/in/phanirajabharathbalijepalli</a><br>
+          <strong>GitHub:</strong> <a href="https://github.com/Phani-Raja-Bharath" target="_blank"
+            style="color:var(--brand)">github.com/Phani-Raja-Bharath</a><br>
+          <strong>Location:</strong> Orlando, FL (Open to relocation)
+        </p>
+      </div>
+    </div>
+
+    <div class="footer container">
+      © <span id="year"></span> Bharath Balijepalli. All rights reserved.
+    </div>
+
+    <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+
+      // ===== NETWORK CANVAS ANIMATION =====
+      (function() {
+        const canvas = document.getElementById('hero-canvas');
+        const ctx = canvas.getContext('2d');
+        let nodes = [], W, H;
+        const BRAND = '#00e5a0', BRAND2 = '#00b8ff';
+        const NODE_COUNT = 60, CONNECTION_DIST = 160;
+
+        function resize() {
+          W = canvas.width = window.innerWidth;
+          H = canvas.height = window.innerHeight;
+        }
+
+        function initNodes() {
+          nodes = [];
+          for (let i = 0; i < NODE_COUNT; i++) {
+            nodes.push({
+              x: Math.random() * W, y: Math.random() * H,
+              vx: (Math.random() - 0.5) * 0.4, vy: (Math.random() - 0.5) * 0.4,
+              r: Math.random() * 1.8 + 0.8,
+              pulse: Math.random() * Math.PI * 2,
+            });
+          }
+        }
+
+        function draw() {
+          ctx.clearRect(0, 0, W, H);
+          const t = Date.now() * 0.001;
+
+          // Draw connections
+          for (let i = 0; i < nodes.length; i++) {
+            for (let j = i + 1; j < nodes.length; j++) {
+              const dx = nodes[j].x - nodes[i].x, dy = nodes[j].y - nodes[i].y;
+              const dist = Math.sqrt(dx*dx + dy*dy);
+              if (dist < CONNECTION_DIST) {
+                const alpha = (1 - dist / CONNECTION_DIST) * 0.35;
+                const gradient = ctx.createLinearGradient(nodes[i].x, nodes[i].y, nodes[j].x, nodes[j].y);
+                gradient.addColorStop(0, `rgba(0,229,160,${alpha})`);
+                gradient.addColorStop(1, `rgba(0,184,255,${alpha})`);
+                ctx.beginPath();
+                ctx.strokeStyle = gradient;
+                ctx.lineWidth = 0.8;
+                ctx.moveTo(nodes[i].x, nodes[i].y);
+                ctx.lineTo(nodes[j].x, nodes[j].y);
+                ctx.stroke();
+              }
+            }
+          }
+
+          // Draw nodes
+          nodes.forEach(n => {
+            const pulse = Math.sin(t * 1.5 + n.pulse) * 0.5 + 0.5;
+            const grd = ctx.createRadialGradient(n.x, n.y, 0, n.x, n.y, n.r * 3);
+            grd.addColorStop(0, `rgba(0,229,160,${0.7 + pulse * 0.3})`);
+            grd.addColorStop(1, `rgba(0,184,255,0)`);
+            ctx.beginPath();
+            ctx.arc(n.x, n.y, n.r * (1 + pulse * 0.4), 0, Math.PI * 2);
+            ctx.fillStyle = grd;
+            ctx.fill();
+
+            // Move
+            n.x += n.vx; n.y += n.vy;
+            if (n.x < 0 || n.x > W) n.vx *= -1;
+            if (n.y < 0 || n.y > H) n.vy *= -1;
+          });
+
+          requestAnimationFrame(draw);
+        }
+
+        resize();
+        initNodes();
+        draw();
+        window.addEventListener('resize', () => { resize(); initNodes(); });
+      })();
+
+      // ===== SCROLL REVEAL =====
+      (function() {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (e.isIntersecting) {
+              e.target.classList.add('visible');
+              observer.unobserve(e.target);
+            }
+          });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.project-card, .skill-card, .contact-card, .journey-item, .reveal').forEach((el, i) => {
+          el.classList.add('reveal');
+          if (i % 5 === 1) el.classList.add('reveal-delay-1');
+          else if (i % 5 === 2) el.classList.add('reveal-delay-2');
+          else if (i % 5 === 3) el.classList.add('reveal-delay-3');
+          else if (i % 5 === 4) el.classList.add('reveal-delay-4');
+          observer.observe(el);
+        });
+      })();
+
+      // ===== STAT COUNTER ANIMATION =====
+      (function() {
+        const stats = document.querySelectorAll('.stat-value');
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach(e => {
+            if (!e.isIntersecting) return;
+            const el = e.target;
+            const raw = el.textContent.trim();
+            const num = parseFloat(raw);
+            const suffix = raw.replace(/[\d.]/g, '');
+            if (isNaN(num)) return;
+            let start = null;
+            const duration = 1400;
+            const step = (ts) => {
+              if (!start) start = ts;
+              const progress = Math.min((ts - start) / duration, 1);
+              const ease = 1 - Math.pow(1 - progress, 3);
+              const val = num <= 1 ? (ease * num).toFixed(1) : Math.round(ease * num);
+              el.textContent = val + suffix;
+              if (progress < 1) requestAnimationFrame(step);
+            };
+            requestAnimationFrame(step);
+            observer.unobserve(el);
+          });
+        }, { threshold: 0.5 });
+        stats.forEach(s => observer.observe(s));
+      })();
+
+
+
+      // Mobile drawer
+      const menuBtn = document.getElementById("menuBtn");
+      const menuClose = document.getElementById("menuClose");
+      const mobileMenu = document.getElementById("mobileMenu");
+
+      function openMenu() {
+        mobileMenu.classList.add("open");
+        mobileMenu.setAttribute("aria-hidden", "false");
+        menuBtn.setAttribute("aria-expanded", "true");
+        document.body.style.overflow = "hidden";
+      }
+
+      function closeMenu() {
+        mobileMenu.classList.remove("open");
+        mobileMenu.setAttribute("aria-hidden", "true");
+        menuBtn.setAttribute("aria-expanded", "false");
+        document.body.style.overflow = "";
+      }
+
+      menuBtn?.addEventListener("click", openMenu);
+      menuClose?.addEventListener("click", closeMenu);
+
+      // Close if you click outside the panel
+      mobileMenu?.addEventListener("click", (e) => {
+        if (e.target === mobileMenu) closeMenu();
+      });
+
+      // Close on Escape
+      window.addEventListener("keydown", (e) => {
+        if (e.key === "Escape") closeMenu();
+      });
+
+      // Close when a link is clicked
+      document.querySelectorAll(".mobile-link").forEach(a => {
+        a.addEventListener("click", (e) => {
+          closeMenu();
+          const href = a.getAttribute("href");
+          if (href.startsWith("#")) {
+            e.preventDefault();
+            const target = document.querySelector(href);
+            if (target) {
+              const headerOffset = 70;
+              const top = target.getBoundingClientRect().top + window.scrollY - headerOffset;
+              window.scrollTo({ top, behavior: "smooth" });
+            }
+          }
+        });
+      });
+    </script>
+  </div>
+</body>
+</html>
